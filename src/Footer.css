@@ -21,8 +21,11 @@
 */
 .Footer
 {
-    height: auto;
-    width: auto;
+    height: 180px;
+    box-sizing:border-box;
+    bottom: 0;
+    padding: 15px 0 0 0;
+    margin-top: 80px;
     background-color: #eeeeee;
     font-size: 20px;
     font-weight: 250;
@@ -31,4 +34,16 @@
     
 }
 
+.Footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
 
+.Footer ul li {
+    height: 30px;
+}
+
+.Footer ul li a{
+    text-decoration: none;
+}

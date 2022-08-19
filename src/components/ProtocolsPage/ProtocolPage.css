@@ -1,4 +1,14 @@
-.InputStyle {
-    width: 400px;
+.Input-formcontrol-style {
+    width: 100%;
+    max-width: 400px;
     height: 55px;
+}
+
+.InputStyle {
+    height: 55px;
+}
+
+.protocol-div-container{
+    width: 100vw;
+    height: 100vh;
 }

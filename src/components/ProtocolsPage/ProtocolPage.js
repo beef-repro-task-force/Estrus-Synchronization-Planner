@@ -561,11 +561,11 @@ const ProtocolPage = props => {
 
     return (
         
-        <div>
+        <div className='protocol-div-container'>
             <br />
             <br />
             {/* Select Protocol */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className='Input-formcontrol-style'>
                 <InputLabel>Select Protocol</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -588,7 +588,6 @@ const ProtocolPage = props => {
             >
             Return
             </Button>
-
             <Button 
                 onClick = {() => {CheckDataAndSubmit()}}
                 variant   = "contained" 

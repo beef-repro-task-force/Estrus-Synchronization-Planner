@@ -51,7 +51,7 @@ const HomePage = () => {
             SemenType = {SemenType}
             SystemType={SystemType}
             CowOrHeifer ={CowOrHeifer}
-            SystemType={SystemType}
+            //SystemType={SystemType}
             DateToStartBreeding={DateToStartBreeding}
             SynchronizationProtocol = {SynchronizationProtocol}
             setSynchronizationProtocol = {setSynchronizationProtocol}

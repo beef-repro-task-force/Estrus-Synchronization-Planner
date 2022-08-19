@@ -36,7 +36,7 @@ const App = () => {
         <Route path = "/reference" component = { Reference } />
         <Route path = "/" exact > <HomePage /> </Route>
         <Footer/>
-    </div>
+      </div>
   </Router>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import CowOrHeiferData from "./CowOrHeifer.json"
@@ -55,7 +56,7 @@ const InitialData = props => {
             <h2>Enter Details Below to Get Started</h2>
             
             {/* Select Cow or Heifer */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>Cow or Heifer</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -72,7 +73,7 @@ const InitialData = props => {
             <br />
 
             {/* Select Cow or Heifer */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>Semen Type</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -89,7 +90,7 @@ const InitialData = props => {
             <br />
 
             {/* Select Species */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>Breed Type</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -106,7 +107,7 @@ const InitialData = props => {
             <br />
 
             {/* Select System Type */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>System Type</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -123,7 +124,7 @@ const InitialData = props => {
             <br />
 
             {/* Select GNRH Type */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>GNRH</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -139,7 +140,7 @@ const InitialData = props => {
             <br />
 
             {/* Select GNRH Type */}
-            <FormControl variant = "outlined" >
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>PG</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -155,7 +156,7 @@ const InitialData = props => {
             <br />
 
             {/* Set Gestation Period */}
-            <FormControl variant = "outlined">
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>Gestation Period</InputLabel>
                 <input 
                 type="number"
@@ -169,7 +170,7 @@ const InitialData = props => {
             <br />
 
             {/* Set Bull Turn In */}
-            <FormControl variant = "outlined">
+            <FormControl variant = "outlined" className="Input-formcontrol-style">
                 <InputLabel>Bull Turn In</InputLabel>
                 <input 
                 type="number"
