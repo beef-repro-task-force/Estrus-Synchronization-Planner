@@ -1,0 +1,17 @@
+@media print{
+
+   .toPrint{
+    display: block;
+    size: landscape;
+    width: 100%;
+
+   }
+    
+    .fc-toolbar-chunk{
+        display: none;
+    }
+}
+  
+.fc-event .fc-content span{
+    display: block;
+}

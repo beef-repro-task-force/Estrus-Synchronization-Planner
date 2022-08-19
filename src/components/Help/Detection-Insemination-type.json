@@ -1,0 +1,18 @@
+[
+    [
+        "1. Estrus AI",
+        "Inseminate animals 6-12 hours after standing heat is first observed."
+    ],
+    [
+        "2. Estrus AI & Clean-up AI ",
+        "Insemination following observed estrus up to time point prescribed in schedule, followed by Fixed Time insemination of animals not previously detected in heat"
+    ],
+    [
+        "3. Fixed-Time AI",
+        "A single, mass insemination of all animals.  No heat detection used."
+    ],
+    [
+        "4. Split-Time AI",
+        "Split-time AI = two insemination points used.  Use a heat detection aid to identify estrous females and inseminate only estrous females at the first time point.  Remaining females are Fixed Time inseminated 20 to 24 hours later."
+    ]
+]

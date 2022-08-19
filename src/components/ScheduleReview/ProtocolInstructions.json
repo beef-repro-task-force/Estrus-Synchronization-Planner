@@ -1,0 +1,1761 @@
+{
+    "1": [{
+
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "8",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "12",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "26",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "26",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "2": [{
+
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Peak heat at 36 - 72 hours after PG."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "3": [{
+
+            "OnDay": "-14",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Start heat detection.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "4": [{
+
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak heat at 60 - 72 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 10-14 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "10",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "24",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "5": [{
+
+            "OnDay": "-31",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-18",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-16",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak heat at 60 - 72 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "6": [{
+
+            "OnDay": "-32",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-17",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak heat at 60 - 72 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "6",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "20",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "7": [{
+
+            "OnDay": "-6",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "3",
+            "step1": "Peak heat at 36 - 72 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "7",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "21",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "22",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "8": [{
+
+            "OnDay": "-32",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-17",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-7",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak heat at 60 - 72 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        }
+    ],
+    "9": [{
+
+            "OnDay": "-32",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-17",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-7",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "0.166666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "0.166666667",
+            "step3": "Start heat detection.",
+            "step4": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "21",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        }
+    ],
+    "10": [{
+
+            "OnDay": "-9",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "0.416666667"
+        },
+        {
+            "OnDay": "-2",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "0.416666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females ",
+            "step2": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "11": [{
+
+            "OnDay": "-9",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "0.416666667"
+        },
+        {
+            "OnDay": "-2",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "0.416666667",
+            "step3": "Remove calves from cows and pen seperately."
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "12": [{
+
+            "OnDay": "-17",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-11",
+            "step1": "Last day to feed MGA at .5 mg/hd/day.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-7",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak heat at 48 - 60 hours after PG.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "13": [{
+
+            "OnDay": "-10",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": ""
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": ""
+        },
+        {
+            "OnDay": "-1",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females at: ",
+            "step2": ""
+        },
+        {
+            "OnDay": "0",
+            "step1": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "14": [{
+
+            "OnDay": "-7",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "Start heat detection.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Peak heat at 36 - 48 hours after PG.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "6",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "20",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "15": [{
+
+            "OnDay": "-7",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "Start heat detection.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Peak period for females in heat if CIDR is removed early in day.",
+            "step2": "Continue heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "6",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "20",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "16": [{
+
+            "OnDay": "-7",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step4": "Start heat detection."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "17": [{
+
+            "OnDay": "-35",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-22",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-20",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-10",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": ""
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "0.416666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "18": [{
+
+            "OnDay": "-23",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-10",
+            "step1": "Last day to feed MGA at .5 mg/hd/day.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females."
+        },
+        {
+            "OnDay": "-8",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-6",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females."
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "44347.91667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "19": [{
+
+            "OnDay": "-6",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to females not bred AI at:",
+            "step4": "0.166666667"
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "22",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "20": [{
+
+            "OnDay": "-17",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-11",
+            "step1": "Last day to feed MGA at .5 mg/hd/day.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "0.166666667"
+        },
+        {
+            "OnDay": "-7",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "0.166666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc  5cc Lutalyse(PG) to all females at:",
+            "step2": "0.166666667",
+            "step3": "Start heat detection.",
+            "step4": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "21": [{
+
+            "OnDay": "-5",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "0.166666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Start heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat.",
+            "step3": "Inject 5cc Lutalyse (PG) to all females.",
+            "step4": "0.166666667"
+        },
+        {
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "5",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "19",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "23",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "22": [{
+
+            "OnDay": "-10",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject   5cc Lutalyse (PG) in all females.",
+            "step3": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "23": [{
+
+            "OnDay": "-9",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-2",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject   5cc Lutalyse (PG) to all females at:",
+            "step3": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "19",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "24": [{
+
+            "OnDay": "-7",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "0.166666667",
+            "step4": "Start heat detection."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Peak heat at 60 - 72 hours after PG.",
+            "step3": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "25": [{
+
+            "OnDay": "-7",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step3": "0.166666667",
+            "step4": "Start heat detection."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "26": [{
+
+            "OnDay": "-32",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-17",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Continue heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "27": [{
+
+            "OnDay": "-35",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-22",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-20",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) in all females. ",
+            "step2": "Apply estrus detection aid.",
+            "step3": ""
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "28": [{
+
+            "OnDay": "-33",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Remove the CIDR device from each female",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-10",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "0.416666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "29": [{
+
+            "OnDay": "-8",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device and apply estrus detection aid for each female.",
+            "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
+            "step3": "0.416666667",
+            "step4": "Give 2nd injection, 5cc Lutalyse (PG) to all females 8 +/-2 hours after first injection"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "30": [{
+
+            "OnDay": "-30",
+            "step1": "Insert one CIDR device in each female.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-16",
+            "step1": "Remove the CIDR device from each female.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "6",
+            "step1": "Last day of heat detection.",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "20",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "31": [{
+
+            "OnDay": "-30",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-16",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step2": "Start heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": ""
+        },
+        {
+            "OnDay": "3",
+            "step1": "Last day of heat detection.",
+            "step2": "Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:"
+        },
+        {
+            "OnDay": "17",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "21",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "32": [{
+
+            "OnDay": "-33",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) in all females. ",
+            "step2": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "33": [{
+
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "Begin heat detection.",
+            "step3": "Breed females AI 16-22 hours after standing heat.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "1",
+            "step1": "Heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Insert one CIDR device in each female that was not bred.",
+            "step2": "Inject 2cc Cystorelin (GnRH) for each female not bred.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "9",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) for each female not bred.",
+            "step3": "0.166666667"
+        },
+        {
+            "OnDay": "10",
+            "step1": "Continue heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "11",
+            "step1": "Continue heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "12",
+            "step1": "Last day of heat detection.",
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "26",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        }
+    ],
+    "34": [{
+
+            "OnDay": "0",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "( no time constraint )",
+            "step3": "Begin heat detection.",
+            "step4": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "1",
+            "step1": "Heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "2",
+            "step1": "Heat detection",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "3",
+            "step1": "Insert one CIDR device in each female that was not bred.",
+            "step2": "Inject 2cc Cystorelin (GnRH) for each female not bred.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "9",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) for each female not bred.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "10",
+            "step1": "Continue heat detection for 3 more days",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "12",
+            "step1": "Last day of heat detection & breeding",
+            "step2": "Breed females AI 16-22 hours after standing heat."
+        },
+        {
+            "OnDay": "26",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "30",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "35": [{
+
+            "OnDay": "-12",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-9",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) for each female not bred.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) for each female not bred.",
+            "step3": "0.541666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:",
+            "step3": "0.291666667",
+            "step4": "0.541666667"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "36": [{
+
+            "OnDay": "-12",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "OnDay": "-9",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) for each female not bred.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (GnRH) for each female not bred.",
+            "step3": "0.666666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "37": [{
+
+            "OnDay": "-8",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females at: ",
+            "step3": "0.666666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step2": "Fixed Time AI between:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "38": [{
+
+            "OnDay": "-8",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) in all females. ",
+            "step3": "0.916666667",
+            "step4": "Give 2nd injection, 5cc Lutalyse (PG) to all females 8 +/-2 hours after first injection"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:",
+            "step4": "0.25",
+            "step5": "0.583333333"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "39": [{
+
+            "OnDay": "-17",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-10",
+            "step1": "Inject 2cc Cystorelin (GnRH) in all females.",
+            "step2": "( no time constraint )"
+        },
+        {
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
+            "step3": " Apply estrus detection aid.",
+            "step4": "0.666666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "40": [{
+
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen estrous females",
+            "step3": "Target first breeding time between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "41": [{
+
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen those showing females estrus",
+            "step3": "Target first breeding time between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "19",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "42": [{
+
+            "OnDay": "-10",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) in all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) in all females.",
+            "step3": "Apply estrus detection aid.",
+            "step4": "0.416666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) to all nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen",
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "43": [{
+
+            "OnDay": "-17",
+            "step1": "Inject 5cc Lutalyse (PG) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-10",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) in all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) in all females. ",
+            "step3": "Apply estrus detection aid.",
+            "step4": "0.416666667"
+        },
+        {
+            "OnDay": "0",
+            "step1": "Inject 2cc Cystorelin (GnRH) in all nonestrous females.",
+            "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": ""
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "44": [{
+
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) to all females.",
+            "step3": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen estrous females",
+            "step3": "Target first breeding time between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females.  All others with conventional semen.",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "45": [{
+
+            "OnDay": "-33",
+            "step1": "Insert one CIDR device in each female.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-19",
+            "step1": "Remove the CIDR device from each female.",
+            "step3": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) in all females. ",
+            "step2": "Apply estrus detection aid."
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen estrous females",
+            "step2": "Target first breeding time between:"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "46": [{
+
+            "OnDay": "-8",
+            "step1": "Insert one CIDR device in each female.",
+            "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
+            "step4": "( no time constraint )"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Remove the CIDR device from each female.",
+            "step2": "Inject 5cc Lutalyse (PG) & apply estrus detection aid in all females. ",
+            "step4": "Give 2nd injection, 5cc Lutalyse (PG) to all females 8 +/- 2 hours after first injection"
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen those showing estrus",
+            "step3": "Target first breeding time between:"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:"
+        },
+        {
+            "OnDay": "15",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ],
+    "47": [{
+
+            "OnDay": "-35",
+            "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-22",
+            "step1": "Last day to feed MGA at .5 mg/hd/day."
+        },
+        {
+            "OnDay": "-20",
+            "step1": "Large numbers of females will show heat the next 4 days - DO NOT BREED!"
+        },
+        {
+            "OnDay": "-3",
+            "step1": "Inject 5cc Lutalyse (PG) to all females. ",
+            "step2": "Apply estrus detection aid.",
+            "step3": ""
+        },
+        {
+            "OnDay": "0",
+            "step1": "AI with sexed semen estrous females",
+            "step3": "Target first breeding time between:"
+        },
+        {
+            "OnDay": "1",
+            "step1": "AI with sexed semen estrous females.  All others with conventional semen.",
+            "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
+            "step3": "AI remaining females between the hours:"
+        },
+        {
+            "OnDay": "14",
+            "step1": "Turn clean up bulls in with females.",
+            "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
+        },
+        {
+            "OnDay": "18",
+            "step1": "21 Days since last PG"
+        }
+    ]
+}
