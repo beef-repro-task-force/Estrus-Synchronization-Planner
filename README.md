@@ -1,5 +1,7 @@
 # Cow-Scheduling-App
 
+hosted on github with this url: https://beef-repro-task-force.github.io/Estrus-Synchronization-Planner/
+
 Web implentation of the Beef Reporduction taskforce's Estrus Synchronization Planner located at:
 http://www.iowabeefcenter.org/estrussynch.html
 
