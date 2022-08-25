@@ -21,12 +21,10 @@ const ParentView = props => {
     //example protocol 38 has 5 set of instructions for 5 different days 
     //these sets are broken down into steps 1 ... 4 
         //Add expected birth date to list of instructions
-    let ListOfInstrucitons = [...ProtocolInstructions[SynchronizationProtocol] ,  {"OnDay" : GestationPeriod.toString(), "step1" : "Expected Birth Date" }];    
-
-    console.log("BullTurnIn is: " + BullTurnIn)
+    let ListOfInstrucitons = [...ProtocolInstructions[SynchronizationProtocol] ,  {"OnDay" : GestationPeriod.toString(), "step1" : "Expected Birth Date" }];     
 
     //Add bull turn in day
-    let BullTurnInDict = {"OnDay" : BullTurnIn.toString() , "step1" : "Bull Turn In Begins " }
+    /*let BullTurnInDict = {"OnDay" : BullTurnIn.toString() , "step1" : "Bull Turn In Begins " }
 
         //Find where to place Bull Turn In Date in the list of events within protocol
         let TempIndex = 0;
@@ -36,7 +34,7 @@ const ParentView = props => {
                 break;
             }
         }
-        ListOfInstrucitons.splice(TempIndex, 0, BullTurnInDict)
+        ListOfInstrucitons.splice(TempIndex, 0, BullTurnInDict)*/
 
     //Create then download the iCalendar file
     const downloadICS = () =>{
@@ -102,7 +100,7 @@ const ParentView = props => {
                 onClick={() => {
                     downloadICS();
                 }}
-            >Download these Events as an iCalendar file (.ics)
+            >iCalendar file (.ics)
             </Button>
         </div>
 

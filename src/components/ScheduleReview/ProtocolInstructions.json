@@ -596,7 +596,9 @@
         {
             "OnDay": "3",
             "step1": "Last day of heat detection.",
-            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:"
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.166666667",
+            "step4": "0.666666667"
         },
         {
             "OnDay": "17",
@@ -1157,7 +1159,9 @@
         {
             "OnDay": "3",
             "step1": "Last day of heat detection.",
-            "step2": "Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:"
+            "step2": "Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "17",
@@ -1672,7 +1676,9 @@
             "OnDay": "1",
             "step1": "AI with sexed semen estrous females",
             "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
-            "step3": "AI remaining females between the hours:"
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
@@ -1706,7 +1712,9 @@
             "OnDay": "1",
             "step1": "AI with sexed semen estrous females",
             "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
-            "step3": "AI remaining females between the hours:"
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "15",
@@ -1746,7 +1754,9 @@
             "OnDay": "1",
             "step1": "AI with sexed semen estrous females.  All others with conventional semen.",
             "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
-            "step3": "AI remaining females between the hours:"
+            "step3": "AI remaining females between the hours:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
