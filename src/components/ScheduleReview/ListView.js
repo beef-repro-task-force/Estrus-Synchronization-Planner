@@ -35,9 +35,10 @@ const ListView = props => {
                 
                 marginOfErr = (plusErr - minusErr)/2;
 
-                tmpDate1.setHours(tmpDate1.getHours()-marginOfErr);
-                tmpDate2.setHours(tmpDate2.getHours()+marginOfErr);
-                console.log(tmpDate1);
+                tmpDate1.setHours(tmpDate1.getHours() - marginOfErr);
+                tmpDate2.setHours(tmpDate2.getHours() + marginOfErr);
+                console.log( "setting the hour" + tmpDate1);
+                console.log( "setting the hour" + tmpDate2);
                 console.log(marginOfErr);
                 console.log(tmpDate1.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }));
                 ListOfInstrucitons[i].step3 = tmpDate1.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
