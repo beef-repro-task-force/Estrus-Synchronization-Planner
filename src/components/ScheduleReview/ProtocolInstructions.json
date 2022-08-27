@@ -373,7 +373,9 @@
         {
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to all females ",
-            "step2": "Fixed Time AI between:"
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "14",
@@ -400,7 +402,9 @@
         {
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
-            "step2": "Fixed Time AI between:"
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "14",
@@ -479,7 +483,9 @@
         },
         {
             "OnDay": "0",
-            "step1": "Fixed Time AI between:"
+            "step1": "Fixed Time AI between:",
+            "step2": "0.25",
+            "step3": "0.583333333"
         },
         {
             "OnDay": "14",
@@ -834,7 +840,9 @@
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
             "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
-            "step3": "Fixed Time AI between:"
+            "step3": "Fixed Time AI between:",
+            "step4": "0.291666667",
+            "step5": "0.541666667"
         },
         {
             "OnDay": "14",
@@ -863,7 +871,9 @@
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
             "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
-            "step3": "Fixed Time AI between:"
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
@@ -1027,7 +1037,9 @@
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
             "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
-            "step3": "Fixed Time AI between:"
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
@@ -1063,7 +1075,9 @@
         {
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
-            "step2": "Fixed Time AI between:"
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "14",
@@ -1093,7 +1107,9 @@
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to all nonestrous females.",
             "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
-            "step3": "Fixed Time AI between:"
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
@@ -1193,7 +1209,9 @@
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
             "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
-            "step3": "Fixed Time AI between:"
+            "step3": "Fixed Time AI between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "14",
@@ -1394,7 +1412,9 @@
         {
             "OnDay": "0",
             "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
-            "step2": "Fixed Time AI between:"
+            "step2": "Fixed Time AI between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "14",
@@ -1670,7 +1690,9 @@
         {
             "OnDay": "0",
             "step1": "AI with sexed semen estrous females",
-            "step2": "Target first breeding time between:"
+            "step2": "Target first breeding time between:",
+            "step3": "0.333333333",
+            "step4": "0.5"
         },
         {
             "OnDay": "1",
@@ -1706,7 +1728,9 @@
         {
             "OnDay": "0",
             "step1": "AI with sexed semen those showing estrus",
-            "step3": "Target first breeding time between:"
+            "step3": "Target first breeding time between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "1",
@@ -1748,7 +1772,9 @@
         {
             "OnDay": "0",
             "step1": "AI with sexed semen estrous females",
-            "step3": "Target first breeding time between:"
+            "step3": "Target first breeding time between:",
+            "step4": "0.333333333",
+            "step5": "0.5"
         },
         {
             "OnDay": "1",
