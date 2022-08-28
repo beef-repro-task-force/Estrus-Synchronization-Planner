@@ -752,7 +752,7 @@
         },
         {
             "OnDay": "0",
-            "step1": "Inject 2cc  5cc Lutalyse(PG) to all females at:",
+            "step1": "Inject 5cc Lutalyse (PG) to all females at:",
             "step2": "0.166666667",
             "step3": "Start heat detection.",
             "step4": "Breed females AI 16-22 hours after standing heat."
@@ -865,7 +865,7 @@
         {
             "OnDay": "-2",
             "step1": "Remove the CIDR device from each female.",
-            "step2": "Inject   5cc Lutalyse (PG) to all females at:",
+            "step2": "Inject 5cc Lutalyse (PG) to all females at:",
             "step3": "Apply estrus detection aid.",
             "step4": "+18hrs"
         },

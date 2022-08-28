@@ -6,6 +6,63 @@ import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-
 const ListView = props => {
     const { ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
 
+
+
+    var selectedGNRH;
+    var selectedPG;
+
+    switch(true){
+        case GNRH == 1:
+            selectedGNRH = "2cc Cystorelin";
+            break;
+        case GNRH == 2:
+            selectedGNRH = "2cc Factrel";
+            break;
+        case GNRH == 3:
+            selectedGNRH = "2cc Fertagyl";
+            break;
+        case GNRH == 4:
+            selectedGNRH = "2cc OvaCyst";
+            break;
+        case GNRH == 5:
+            selectedGNRH = "1cc GONAbreed";
+            break;
+        default:
+            break;
+    }
+
+    console.log("the selected GNRH: " + selectedGNRH);
+
+    switch(true){
+        case PG == 1:
+            selectedPG = "2cc Estrumate";
+            break;
+        case PG == 2:
+            selectedPG = "2cc EstroPLAN";
+            break;
+        case PG == 3:
+            selectedPG = "5cc InSynch";
+            break;
+        case PG == 4:
+            selectedPG = "5cc Lutalyse";
+            break;
+        case PG == 5:
+            selectedPG = "5cc ProstaMate";
+            break;
+        case PG == 6:
+            selectedPG = "2cc HiConc.Lut.";
+            break;
+        case PG == 7:
+            selectedPG = "2cc Synchsure";
+            break;
+        default:
+            break;
+    }
+
+    console.log("the selected PG: " + selectedPG);
+
+
+
     // fixing some timing issues
     const length = Object.keys(ListOfInstrucitons).length;
 
@@ -16,8 +73,7 @@ const ListView = props => {
         // subtract time
         for(var j = 1; j < 6; j ++){
             stepX = "step"+j;
-            console.log(stepX);
-            console.log(JSON.stringify(ListOfInstrucitons[i][stepX]));
+            // subtract time
             if( JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined ){
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.416666667")){
                     marginOfErr = 0;
@@ -43,20 +99,16 @@ const ListView = props => {
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-18hrs")){
                     marginOfErr = 18;
                 }
+                if(marginOfErr >= 0){
+                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
+                    ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    
+                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
+                    marginOfErr = -1;
+                }
             }
 
-            if(marginOfErr >= 0){
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
-                marginOfErr = -1;
-            }
-        } // end of for loop for subtracting
-
-        // add to time
-        for(var k = 1; k < 6; k ++){
-            stepX = "step"+k;
+            // add time
             if( JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined ){
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.5")){
                     marginOfErr = 2;
@@ -76,17 +128,25 @@ const ListView = props => {
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+18hrs")){
                     marginOfErr = 18;
                 }
+                if(marginOfErr >= 0){
+                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
+                    ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+    
+                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
+                    marginOfErr = -1;
+                }
+
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("2cc Cystorelin")){
+                    ListOfInstrucitons[i][stepX] = JSON.stringify(ListOfInstrucitons[i][stepX]).replace("2cc Cystorelin", selectedGNRH);
+                }
+    
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("5cc Lutalyse")){
+                    ListOfInstrucitons[i][stepX] = JSON.stringify(ListOfInstrucitons[i][stepX]).replace("5cc Lutalyse", selectedPG);
+                }
             }
+            
 
-            if(marginOfErr >= 0){
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
-                ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                marginOfErr = -1;
-            }
-        } // end of for loop for adding
-
+        } // end of inner for loop
     } // end of main for loop
 
     const leadingZeroesHours = (DateObject) =>{
@@ -98,10 +158,7 @@ const ListView = props => {
     }
 
     return (
-        <>
-            { console.log(GNRH) }
-            { console.log(PG) }
-           
+        <> 
             <h2>Protocol #{SynchronizationProtocol}</h2>
 
             <div className="centerTable">
