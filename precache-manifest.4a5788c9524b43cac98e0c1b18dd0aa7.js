@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90bcfce17385476ee1ad69cc7fcb1618",
+    "revision": "e985ffc9387bd95811ac035f19720e31",
     "url": "/Estrus-Synchronization-Planner/index.html"
   },
   {
-    "revision": "699af5bf1c65ad5c1bb4",
+    "revision": "0eae9246fd88efb561f8",
     "url": "/Estrus-Synchronization-Planner/static/css/2.53fe27fa.chunk.css"
   },
   {
-    "revision": "12aaf2d529a3945c3928",
+    "revision": "c296ec615e0fbe6d37d1",
     "url": "/Estrus-Synchronization-Planner/static/css/main.49dc2dc2.chunk.css"
   },
   {
-    "revision": "699af5bf1c65ad5c1bb4",
-    "url": "/Estrus-Synchronization-Planner/static/js/2.ab1ed5ac.chunk.js"
+    "revision": "0eae9246fd88efb561f8",
+    "url": "/Estrus-Synchronization-Planner/static/js/2.04e77fa3.chunk.js"
   },
   {
     "revision": "89a1b2dcd30c03705b2bceeb141b76b6",
-    "url": "/Estrus-Synchronization-Planner/static/js/2.ab1ed5ac.chunk.js.LICENSE.txt"
+    "url": "/Estrus-Synchronization-Planner/static/js/2.04e77fa3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "12aaf2d529a3945c3928",
-    "url": "/Estrus-Synchronization-Planner/static/js/main.dab9ed0a.chunk.js"
+    "revision": "c296ec615e0fbe6d37d1",
+    "url": "/Estrus-Synchronization-Planner/static/js/main.c379fb53.chunk.js"
   },
   {
     "revision": "e2b0af47db2bc63eebc6",
