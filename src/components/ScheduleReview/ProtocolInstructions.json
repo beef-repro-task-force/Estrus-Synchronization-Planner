@@ -675,7 +675,7 @@
             "step1": "Inject 2cc Cystorelin (GnRH) to all females."
         },
         {
-            "OnDay": "-3",
+            "OnDay": "-2",
             "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
             "step2": "44347.91667"
         },
@@ -833,8 +833,9 @@
         {
             "OnDay": "-3",
             "step1": "Remove the CIDR device from each female.",
-            "step2": "Inject   5cc Lutalyse (PG) in all females.",
-            "step3": "Apply estrus detection aid."
+            "step2": "Inject 5cc Lutalyse (PG) in all females.",
+            "step3": "Apply estrus detection aid.",
+            "step4": "+9hrs"
         },
         {
             "OnDay": "0",
@@ -865,7 +866,8 @@
             "OnDay": "-2",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject   5cc Lutalyse (PG) to all females at:",
-            "step3": "Apply estrus detection aid."
+            "step3": "Apply estrus detection aid.",
+            "step4": "+18hrs"
         },
         {
             "OnDay": "0",
@@ -1030,8 +1032,7 @@
         {
             "OnDay": "-3",
             "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-            "step2": "Apply estrus detection aid.",
-            "step3": ""
+            "step2": "0.416666667"
         },
         {
             "OnDay": "0",
@@ -1203,7 +1204,8 @@
         {
             "OnDay": "-3",
             "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-            "step2": "Apply estrus detection aid."
+            "step2": "Apply estrus detection aid.",
+            "step3": "0.666666667"
         },
         {
             "OnDay": "0",
@@ -1503,7 +1505,8 @@
         {
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
-            "step3": "Apply estrus detection aid."
+            "step3": "Apply estrus detection aid.",
+            "step4": "-15hrs"
         },
         {
             "OnDay": "0",
@@ -1539,7 +1542,8 @@
         {
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
-            "step3": "Apply estrus detection aid."
+            "step3": "Apply estrus detection aid.",
+            "step4": "0.166666667"
         },
         {
             "OnDay": "0",
@@ -1636,7 +1640,6 @@
         }
     ],
     "44": [{
-
             "step1": "Insert one CIDR device in each female.",
             "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
             "step4": "( no time constraint )"
@@ -1644,7 +1647,8 @@
         {
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
-            "step3": "Apply estrus detection aid."
+            "step3": "Apply estrus detection aid.",
+            "step4": "-18hrs"
         },
         {
             "OnDay": "0",
@@ -1685,7 +1689,8 @@
         {
             "OnDay": "-3",
             "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-            "step2": "Apply estrus detection aid."
+            "step2": "Apply estrus detection aid.",
+            "step3": "-18hrs"
         },
         {
             "OnDay": "0",
@@ -1723,6 +1728,7 @@
             "OnDay": "-3",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) & apply estrus detection aid in all females. ",
+            "step3": "-12hrs",
             "step4": "Give 2nd injection, 5cc Lutalyse (PG) to all females 8 +/- 2 hours after first injection"
         },
         {
@@ -1767,7 +1773,7 @@
             "OnDay": "-3",
             "step1": "Inject 5cc Lutalyse (PG) to all females. ",
             "step2": "Apply estrus detection aid.",
-            "step3": ""
+            "step3": "0.416666667"
         },
         {
             "OnDay": "0",

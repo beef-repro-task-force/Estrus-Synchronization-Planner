@@ -6,229 +6,88 @@ import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-
 const ListView = props => {
     const { ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
 
-    console.log(JSON.stringify(ListOfInstrucitons[0]));
-    console.log(ListOfInstrucitons[0].OnDay);
-    console.log(DateToStartBreeding);
-    console.log(DateToStartBreeding.getHours());
-    //console.log(DateToStartBreeding.getDate());
-
     // fixing some timing issues
     const length = Object.keys(ListOfInstrucitons).length;
 
-    
-    var minusErr;
-    var plusErr;
+    for(var i = 0; i < length; i ++){
+        var marginOfErr = -1;
+        var stepX = "step";
 
-    
-    for(var i = 0; i < length; i ++){  
-        var marginOfErr = 0;
-        console.log(JSON.stringify(ListOfInstrucitons[i]));
-        
-        // step 1
-        if(JSON.stringify(ListOfInstrucitons[i].step1) !== undefined){
-            if(JSON.stringify(ListOfInstrucitons[i].step1).includes("between the hours") || JSON.stringify(ListOfInstrucitons[i].step1).includes("Fixed Time AI between") || JSON.stringify(ListOfInstrucitons[i].step1).includes("Target first breeding time between")){
-                console.log("before the switch statement" + marginOfErr);
-
-                if(JSON.stringify(ListOfInstrucitons[i].step2).includes("0.333333333")){
-                    marginOfErr = 2;
-                }
-                if(JSON.stringify(ListOfInstrucitons[i].step2).includes("0.291666667")){
-                    marginOfErr = 3;
-                }
-                if(JSON.stringify(ListOfInstrucitons[i].step2).includes("0.25")){
-                    marginOfErr = 4;
-                }
-                if(JSON.stringify(ListOfInstrucitons[i].step2).includes("0.166666667")){
-                    marginOfErr = 6;
-                }
-                
-                console.log("after the switch statement" + marginOfErr);
-
-                if(marginOfErr > 0){
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    ListOfInstrucitons[i].step2 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                    ListOfInstrucitons[i].step3 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                    console.log("step4 is:" + JSON.stringify(ListOfInstrucitons[i].step4));
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
+        // subtract time
+        for(var j = 1; j < 6; j ++){
+            stepX = "step"+j;
+            console.log(stepX);
+            console.log(JSON.stringify(ListOfInstrucitons[i][stepX]));
+            if( JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined ){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.416666667")){
                     marginOfErr = 0;
                 }
-            }
-        }
-
-        // step 2
-        if(JSON.stringify(ListOfInstrucitons[i].step2) !== undefined){
-            if(JSON.stringify(ListOfInstrucitons[i].step2).includes("between the hours") || JSON.stringify(ListOfInstrucitons[i].step2).includes("Fixed Time AI between") || JSON.stringify(ListOfInstrucitons[i].step2).includes("Target first breeding time between")){
-                console.log("before the switch statement" + marginOfErr);
-
-                if(JSON.stringify(ListOfInstrucitons[i].step3).includes("0.333333333")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.333333333")){
                     marginOfErr = 2;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step3).includes("0.291666667")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.291666667")){
                     marginOfErr = 3;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step3).includes("0.25")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.25")){
                     marginOfErr = 4;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step3).includes("0.166666667")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.166666667")){
                     marginOfErr = 6;
                 }
-                
-                console.log("after the switch statement" + marginOfErr);
-
-                if(marginOfErr > 0){
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    ListOfInstrucitons[i].step3 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                    ListOfInstrucitons[i].step4 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                    console.log("step4 is:" + JSON.stringify(ListOfInstrucitons[i].step4));
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
-                    marginOfErr = 0;
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-12hrs")){
+                    marginOfErr = 12;
+                }
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-15hrs")){
+                    marginOfErr = 15;
+                }
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-18hrs")){
+                    marginOfErr = 18;
                 }
             }
-        }
 
-        // step 3
-        if(JSON.stringify(ListOfInstrucitons[i].step3) !== undefined){
-            if(JSON.stringify(ListOfInstrucitons[i].step3).includes("between the hours") || JSON.stringify(ListOfInstrucitons[i].step3).includes("Fixed Time AI between") || JSON.stringify(ListOfInstrucitons[i].step3).includes("Target first breeding time between")){
-                console.log("before the switch statement" + marginOfErr);
+            if(marginOfErr >= 0){
+                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
+                ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 
-                if(JSON.stringify(ListOfInstrucitons[i].step4).includes("0.333333333")){
+                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
+                marginOfErr = -1;
+            }
+        } // end of for loop for subtracting
+
+        // add to time
+        for(var k = 1; k < 6; k ++){
+            stepX = "step"+k;
+            if( JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined ){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.5")){
                     marginOfErr = 2;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step4).includes("0.291666667")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.541666667")){
                     marginOfErr = 3;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step4).includes("0.25")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.583333333")){
                     marginOfErr = 4;
                 }
-                if(JSON.stringify(ListOfInstrucitons[i].step4).includes("0.166666667")){
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.666666667")){
                     marginOfErr = 6;
                 }
-                
-                console.log("after the switch statement" + marginOfErr);
-
-                if(marginOfErr > 0){
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    ListOfInstrucitons[i].step4 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                    ListOfInstrucitons[i].step5 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                    console.log("step4 is:" + JSON.stringify(ListOfInstrucitons[i].step4));
-
-                    DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                    console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
-                    marginOfErr = 0;
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+9hrs")){
+                    marginOfErr = 9;
+                }
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+18hrs")){
+                    marginOfErr = 18;
                 }
             }
-        }
 
-
-    }
-
-    
-
-    // JSON.stringify(instruction.step2).includes("Fixed Time AI between:") || JSON.stringify(instruction.step2).includes("between the hours")
-
-    /*ListOfInstrucitons.map(instruction => {
-        if(JSON.stringify(instruction.step1) !== undefined){
-            switch(JSON.stringify(instruction.step2) && JSON.stringify(instruction.step3)) {
-                case "0.333333333" && "0.5":
-                    marginOfErr = 2;
-                    break;
-                case "0.291666667" && "0.541666667":
-                    marginOfErr = 3;
-                    break;
-                case "0.25" && "0.583333333":
-                    marginOfErr = 4;
-                    break;
-                case "0.166666667" && "0.666666667":
-                    marginOfErr = 6;
-                    break;
-                default:
-                    marginOfErr = 0;
-                    break;
-            }
-
-            if(marginOfErr != 0){
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                instruction.step2 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                instruction.step3 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                console.log("step3 is:" + JSON.stringify(instruction.step3));
+            if(marginOfErr >= 0){
+                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + marginOfErr);
+                ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 
                 DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
+                marginOfErr = -1;
             }
-        }
-        if(JSON.stringify(instruction.step2) !== undefined){
-            switch(JSON.stringify(instruction.step3) && JSON.stringify(instruction.step4)) {
-                case "0.333333333" && "0.5":
-                    marginOfErr = 2;
-                    break;
-                case "0.291666667" && "0.541666667":
-                    marginOfErr = 3;
-                    break;
-                case "0.25" && "0.583333333":
-                    marginOfErr = 4;
-                    break;
-                case "0.166666667" && "0.666666667":
-                    marginOfErr = 6;
-                    break;
-                default:
-                    break;
-            }
+        } // end of for loop for adding
 
-            if(marginOfErr != 0){
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                instruction.step3 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                instruction.step4 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                console.log("step4 is:" + JSON.stringify(instruction.step4));
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
-            }
-        }
-        if(JSON.stringify(instruction.step3) !== undefined){
-            switch(JSON.stringify(instruction.step4) && JSON.stringify(instruction.step5)) {
-                case "0.333333333" && "0.5":
-                    marginOfErr = 2;
-                    break;
-                case "0.291666667" && "0.541666667":
-                    marginOfErr = 3;
-                    break;
-                case "0.25" && "0.583333333":
-                    marginOfErr = 4;
-                    break;
-                case "0.166666667" && "0.666666667":
-                    marginOfErr = 6;
-                    break;
-                default:
-                    break;
-            }
-
-            if(marginOfErr != 0){
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                instruction.step4 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() + (2 * marginOfErr));
-                instruction.step5 = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-                console.log("step5 is:" + JSON.stringify(instruction.step5));
-
-                DateToStartBreeding.setHours(DateToStartBreeding.getHours() - marginOfErr);
-                console.log("The DateToStartBreeding at the end of loop: " + DateToStartBreeding);
-            }
-        }
-    });*/
+    } // end of main for loop
 
     const leadingZeroesHours = (DateObject) =>{
         return (DateObject.getHours() < 10 ? '0' : '') + DateObject.getHours();
@@ -237,7 +96,6 @@ const ListView = props => {
     const leadingZeroesMinutes = (DateObject) =>{
         return (DateObject.getMinutes() -3 < 10 ? '0' : '') + (DateObject.getMinutes() -3);
     }
-    
 
     return (
         <>
