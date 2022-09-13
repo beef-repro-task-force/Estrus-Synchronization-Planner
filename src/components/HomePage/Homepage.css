@@ -1,7 +1,14 @@
+.bread-crumb-class{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
 .Input-formcontrol-style {
     width: 100%;
     max-width: 400px;
     height: 55px;
+    
 }
 
 .InputStyle {

@@ -22,6 +22,9 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 import { Database } from './Database.js';
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
@@ -180,7 +183,8 @@ class ProtocolPage extends React.Component
                        height: 55 };
 
         return(
-            <div>         
+            <div>
+                
                 <h1>Select a Protocol</h1>
                 <br/>            
                 <ul>

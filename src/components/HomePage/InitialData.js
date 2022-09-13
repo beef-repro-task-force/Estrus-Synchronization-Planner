@@ -4,6 +4,10 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
+import { purple, red } from '@material-ui/core/colors';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
+//import Typography from '@material-ui/core/Typography';
 import CowOrHeiferData from "./CowOrHeifer.json"
 import BreedTypeData from "./BreedType.json"
 import SystemTypeData from "./SystemType.json"
@@ -54,10 +58,17 @@ const InitialData = props => {
         <div>
             <h1>Welcome to the Estrus Synchronization Planner</h1>
             <h2>Enter Details Below to Get Started</h2>
-            
+            <br />
+            <Breadcrumbs className='bread-crumb-class'>
+                <Typography aria-label="breadcrumb">
+                Home
+                </Typography>
+            </Breadcrumbs>
+            <br />
+
             {/* Select Cow or Heifer */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>Cow or Heifer</InputLabel>
+            <FormControl variant = "filled" className="Input-formcontrol-style" margin='normal'>
+                <InputLabel >Cow or Heifer</InputLabel>
                 <Select 
                     className="InputStyle"
                     value    = { CowOrHeifer || undefined  } 
@@ -72,25 +83,8 @@ const InitialData = props => {
             <br />
             <br />
 
-            {/* Select Cow or Heifer */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>Semen Type</InputLabel>
-                <Select 
-                    className="InputStyle"
-                    value    = { SemenType || undefined  } 
-                    onChange ={ ( event ) => {setSemenType(event.target.value)}} 
-                >
-                    {Object.keys(SemenTypeData).map( (jsonKey, index) => {
-                        return <option key={index} value={SemenTypeData[jsonKey]} >{jsonKey}</option>      
-                    })}
-                    
-                </Select>
-            </FormControl>
-            <br />
-            <br />
-
             {/* Select Species */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
+            <FormControl variant = "filled" className="Input-formcontrol-style">
                 <InputLabel>Breed Type</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -106,8 +100,25 @@ const InitialData = props => {
             <br />
             <br />
 
+            {/* Semen Type */}
+            <FormControl variant = "filled" className="Input-formcontrol-style">
+                <InputLabel>Semen Type</InputLabel>
+                <Select 
+                    className="InputStyle"
+                    value    = { SemenType || undefined  } 
+                    onChange ={ ( event ) => {setSemenType(event.target.value)}} 
+                >
+                    {Object.keys(SemenTypeData).map( (jsonKey, index) => {
+                        return <option key={index} value={SemenTypeData[jsonKey]} >{jsonKey}</option>      
+                    })}
+                    
+                </Select>
+            </FormControl>
+            <br />
+            <br />
+
             {/* Select System Type */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
+            <FormControl variant = "filled" className="Input-formcontrol-style">
                 <InputLabel>System Type</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -120,66 +131,6 @@ const InitialData = props => {
                     
                 </Select>
             </FormControl>
-            <br />
-            <br />
-
-            {/* Select GNRH Type */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>GNRH</InputLabel>
-                <Select 
-                    className="InputStyle"
-                    value    = { GNRH || undefined  } 
-                    onChange ={ ( event ) => {setGNRH(event.target.value)}} 
-                >
-                    {Object.keys(GNRHData).map( (jsonKey, index) => {
-                        return <option key={index} value={GNRHData[jsonKey]} >{jsonKey}</option>      
-                    })}
-                </Select>
-            </FormControl>
-            <br />
-            <br />
-
-            {/* Select GNRH Type */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>PG</InputLabel>
-                <Select 
-                    className="InputStyle"
-                    value    = { PG || undefined  } 
-                    onChange ={ ( event ) => {setPG(event.target.value)}} 
-                >
-                    {Object.keys(PGData).map( (jsonKey, index) => {
-                        return <option key={index} value={PGData[jsonKey]} >{jsonKey}</option>      
-                    })}
-                </Select>
-            </FormControl>
-            <br />
-            <br />
-
-            {/* Set Gestation Period */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>Gestation Period</InputLabel>
-                <input 
-                type="number"
-                style={{textAlign:'center'}}
-                    className="InputStyle"
-                    value    = { GestationPeriod || undefined  } 
-                    onChange ={ ( event ) => {setGestationPeriod(event.target.value)}} 
-                />
-                </FormControl>
-            <br />
-            <br />
-
-            {/* Set Bull Turn In */}
-            <FormControl variant = "outlined" className="Input-formcontrol-style">
-                <InputLabel>Bull Turn In</InputLabel>
-                <input 
-                type="number"
-                style={{textAlign:'center'}}
-                    className="InputStyle"
-                    value    = { BullTurnIn || undefined  } 
-                    onChange ={ ( event ) => {setBullTurnIn(event.target.value)}} 
-                />
-                </FormControl>
             <br />
             <br />
             <br />
@@ -199,11 +150,74 @@ const InitialData = props => {
             <br />
             <br />
             <br />
+
+            {/* Select GNRH Type */}
+            <FormControl variant = "filled" className="Input-formcontrol-style">
+                <InputLabel>GNRH</InputLabel>
+                <Select 
+                    className="InputStyle"
+                    value    = { GNRH || undefined  } 
+                    onChange ={ ( event ) => {setGNRH(event.target.value)}} 
+                >
+                    {Object.keys(GNRHData).map( (jsonKey, index) => {
+                        return <option key={index} value={GNRHData[jsonKey]} >{jsonKey}</option>      
+                    })}
+                </Select>
+            </FormControl>
+            <br />
+            <br />
+
+            {/* Select PG Type */}
+            <FormControl variant = "filled" className="Input-formcontrol-style">
+                <InputLabel>PG</InputLabel>
+                <Select 
+                    className="InputStyle"
+                    value    = { PG || undefined  } 
+                    onChange ={ ( event ) => {setPG(event.target.value)}} 
+                >
+                    {Object.keys(PGData).map( (jsonKey, index) => {
+                        return <option key={index} value={PGData[jsonKey]} >{jsonKey}</option>      
+                    })}
+                </Select>
+            </FormControl>
+            <br />
+            <br />
+
+            {/* Set Bull Turn In */}
+            <FormControl variant = "filled" className="Input-formcontrol-style">
+                <InputLabel>Bull Turn In</InputLabel>
+                <input 
+                type="number"
+                style={{textAlign:'center'}}
+                    className="InputStyle"
+                    value    = { BullTurnIn || undefined  } 
+                    onChange ={ ( event ) => {setBullTurnIn(event.target.value)}} 
+                />
+                </FormControl>
+            <br />
+            <br />
+
+            {/* Set Gestation Period */}
+            <FormControl variant = "filled" className="Input-formcontrol-style">
+                <InputLabel>Gestation Period</InputLabel>
+                <input 
+                type="number"
+                style={{textAlign:'center'}}
+                    className="InputStyle"
+                    value    = { GestationPeriod || undefined  } 
+                    onChange ={ ( event ) => {setGestationPeriod(event.target.value)}} 
+                />
+                </FormControl>
+            <br />
+            <br />
+            <br />
          
             <Button 
                 onClick = {() => {CheckDataAndSubmit()}}
-                variant   = "contained" 
+                variant   = "outlined" 
                 size      = "large"
+                color     = "secondary"
+                
             >
             Submit
             </Button>
