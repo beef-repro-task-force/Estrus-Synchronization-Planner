@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 import ListView from './ListView';
 import CalendarView from './CalendarView';
 import ProtocolInstructions from "./ProtocolInstructions.json"
@@ -103,6 +106,19 @@ const ParentView = props => {
             >iCalendar file (.ics)
             </Button>
         </div>
+
+        <Breadcrumbs className='bread-crumb-class'>
+            <Link onClick={() => {setUserFlow(UserFlow -2)}}>
+            Home
+            </Link>
+            <Link onClick={() => {setUserFlow(UserFlow -1)}}>
+            Protocol
+            </Link>
+            <Typography aria-label="breadcrumb">
+            Instructions
+            </Typography>
+        </Breadcrumbs>
+        <br /> 
 
         {/* Show the Calendar view or the List View ternary */}
         {CalendarOrListView === 0 ?

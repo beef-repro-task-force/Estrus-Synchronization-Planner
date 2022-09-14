@@ -567,7 +567,7 @@ const ProtocolPage = props => {
         <div className='protocol-div-container'>
 
             <Breadcrumbs className='bread-crumb-class'>
-                <Link /*onClick={setUserFlow(UserFlow -1)}*/>
+                <Link onClick={() => {setUserFlow(UserFlow -1)}}>
                 Home
                 </Link>
                 <Typography aria-label="breadcrumb">

@@ -159,6 +159,7 @@ const ListView = props => {
 
     return (
         <> 
+
             <h2>Protocol #{SynchronizationProtocol}</h2>
 
             <div className="centerTable">
