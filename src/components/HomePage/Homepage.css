@@ -1,9 +1,3 @@
-.bread-crumb-class{
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-}
-
 .Input-formcontrol-style {
     width: 100%;
     max-width: 400px;
@@ -15,4 +9,11 @@
     height: 55px;
 }
 
+.pageContainer{
+    width: 100%;
+    max-width: 850px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    min-height: 100vh;
+}
 

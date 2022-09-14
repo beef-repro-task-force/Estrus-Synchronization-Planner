@@ -24,6 +24,8 @@ body{
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  
 }
 
 .App-logo {

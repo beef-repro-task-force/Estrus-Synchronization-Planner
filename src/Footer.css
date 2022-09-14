@@ -31,7 +31,8 @@
     font-weight: 250;
     text-align: left;
     padding-left: 10px;
-    
+    position: relative;
+    left: 0;
 }
 
 .Footer ul {

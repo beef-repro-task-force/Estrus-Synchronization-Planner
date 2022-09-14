@@ -7,6 +7,7 @@ import ListView from './ListView';
 import CalendarView from './CalendarView';
 import ProtocolInstructions from "./ProtocolInstructions.json"
 import swal from 'sweetalert';
+import "./ListView.css"
 const ics = require('ics')
 var FileSaver = require('file-saver');
 
@@ -76,7 +77,7 @@ const ParentView = props => {
 
     return (
         <>
-        <div>
+        <div className='instruction-container'>
             <Button 
                 variant   = "contained" 
                 size      = "large"

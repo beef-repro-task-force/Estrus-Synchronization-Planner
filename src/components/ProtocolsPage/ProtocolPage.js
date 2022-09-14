@@ -8,6 +8,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import SynchProtocolTitleData from "./SynchronozationProtocolTitles.json"
 import swal from 'sweetalert';
+import "./ProtocolPage.css"
 
 const ProtocolPage = props => {
     const {

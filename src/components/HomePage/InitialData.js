@@ -5,8 +5,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import { purple, red } from '@material-ui/core/colors';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
+//import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+//import Link from '@material-ui/core/Link';
 //import Typography from '@material-ui/core/Typography';
 import CowOrHeiferData from "./CowOrHeifer.json"
 import BreedTypeData from "./BreedType.json"
@@ -55,15 +55,9 @@ const InitialData = props => {
         }
     }
     return (
-        <div>
+        <div className='pageContainer'>
             <h1>Welcome to the Estrus Synchronization Planner</h1>
             <h2>Enter Details Below to Get Started</h2>
-            <br />
-            <Breadcrumbs className='bread-crumb-class'>
-                <Typography aria-label="breadcrumb">
-                Home
-                </Typography>
-            </Breadcrumbs>
             <br />
 
             {/* Select Cow or Heifer */}
