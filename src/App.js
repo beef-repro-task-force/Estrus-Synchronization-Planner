@@ -19,6 +19,12 @@
  */
 import React from 'react';
 import './App.css';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/core/Menu';
 import Header from './components/Header';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './Footer';
@@ -30,8 +36,19 @@ const App = () => {
   //Run url router
   return(
     <Router basename='/Estrus-Synchronization-Planner/'>
+      
       <div className = "App" >
         <Header/>
+        <AppBar position="static" className='navBar-area'>
+          <Toolbar>
+            <IconButton edge="start"  color="inherit" aria-label="menu">
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" color="#cf2e2e">
+              Beef Reproduction Task Force
+            </Typography>
+          </Toolbar>
+        </AppBar>
         <Route path = "/help"      component = { Help } />
         <Route path = "/reference" component = { Reference } />
         <Route path = "/" exact > <HomePage /> </Route>

@@ -33,6 +33,10 @@ body{
   pointer-events: none;
 }
 
+.navBar-area{
+  background-color: #A23A41!important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

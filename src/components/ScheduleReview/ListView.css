@@ -19,7 +19,7 @@ td, th {
 .bread-crumb-class{
   width: 100%;
   max-width: 850px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 0px auto!important;
 }
 
 @media print {
