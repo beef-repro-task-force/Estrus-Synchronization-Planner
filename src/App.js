@@ -39,6 +39,7 @@ const App = () => {
       
       <div className = "App" >
         <Header/>
+
         <AppBar position="static" className='navBar-area'>
           <Toolbar>
             <IconButton edge="start"  color="inherit" aria-label="menu">
@@ -49,9 +50,11 @@ const App = () => {
             </Typography>
           </Toolbar>
         </AppBar>
+
         <Route path = "/help"      component = { Help } />
         <Route path = "/reference" component = { Reference } />
         <Route path = "/" exact > <HomePage /> </Route>
+        
         <Footer/>
       </div>
   </Router>
