@@ -25,7 +25,14 @@ body{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  
+}
+
+.footer-container{
+  margin: 50px 0 0 0;
+}
+
+.navbar-typo-title{
+  width: 400px!important;
 }
 
 .App-logo {
@@ -35,7 +42,10 @@ body{
 
 .navBar-area{
   background-color: #A23A41!important;
+  color: white!important;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

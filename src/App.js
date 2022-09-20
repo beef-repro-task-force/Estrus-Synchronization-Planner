@@ -21,10 +21,16 @@ import React from 'react';
 import './App.css';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import YoutubeIcon from '@material-ui/icons/YouTube';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/core/Menu';
+import Grid from '@material-ui/core/Grid';
 import Header from './components/Header';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './Footer';
@@ -42,20 +48,28 @@ const App = () => {
 
         <AppBar position="static" className='navBar-area'>
           <Toolbar>
-            <IconButton edge="start"  color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="#cf2e2e">
-              Beef Reproduction Task Force
-            </Typography>
+            
+              <Typography variant="h6" align='left' className='navbar-typo-title'>
+                Beef Reproduction Task Force
+              </Typography>
+              <Grid container justifyContent="flex-end">
+                <IconButton href='https://www.facebook.com/beefrepro/' ><FacebookIcon /></IconButton>
+                <IconButton href='https://twitter.com/beef_repro' ><TwitterIcon /></IconButton>
+                <IconButton href='https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber' ><YoutubeIcon /></IconButton> 
+              </Grid>
+           
           </Toolbar>
+          
         </AppBar>
 
         <Route path = "/help"      component = { Help } />
         <Route path = "/reference" component = { Reference } />
         <Route path = "/" exact > <HomePage /> </Route>
         
-        <Footer/>
+        
+      </div>
+      <div className='footer-container'>
+      <Footer/>
       </div>
   </Router>
 );
