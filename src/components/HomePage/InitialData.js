@@ -4,6 +4,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 import { purple, red } from '@material-ui/core/colors';
 //import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 //import Link from '@material-ui/core/Link';
@@ -70,7 +71,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setCowOrHeifer(event.target.value)}} 
                 >
                     {Object.keys(CowOrHeiferData).map( (jsonKey, index) => {
-                        return <option key={index} value={CowOrHeiferData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={CowOrHeiferData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                     
                 </Select>
