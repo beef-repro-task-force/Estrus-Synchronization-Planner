@@ -3,6 +3,7 @@ import { Button } from '@material-ui/core';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import ListView from './ListView';
 import CalendarView from './CalendarView';
 import ProtocolInstructions from "./ProtocolInstructions.json"
@@ -77,37 +78,7 @@ const ParentView = props => {
 
     return (
         <>
-        <div className='instruction-container'>
-            <Button 
-                variant   = "contained" 
-                size      = "large"
-                onClick={() => {
-                    setUserFlow(UserFlow -1)
-                }}
-            >Back
-            </Button>
-
-            <Button 
-                variant   = "contained" 
-                size      = "large"
-                onClick={() => {
-                    if(CalendarOrListView){setCalendarOrListView(0)}
-                    else{setCalendarOrListView(1)}
-                    
-                }}
-            >View {CalendarOrListView ? "List" : "Calendar"}
-            </Button>
-
-            <Button 
-                variant   = "contained" 
-                size      = "large"
-                onClick={() => {
-                    downloadICS();
-                }}
-            >iCalendar file (.ics)
-            </Button>
-        </div>
-
+        <br/>
         <Breadcrumbs className='bread-crumb-class'>
             <Link onClick={() => {setUserFlow(UserFlow -2)}}>
             Home
@@ -119,7 +90,28 @@ const ParentView = props => {
             Instructions
             </Typography>
         </Breadcrumbs>
-        <br /> 
+        <br/>
+        <div className='instruction-container'>
+            <Grid container justifyContent="flex-end" className="calendar-btns">
+                <Button  
+                    size      = "large"
+                    onClick={() => {
+                        if(CalendarOrListView){setCalendarOrListView(0)}
+                        else{setCalendarOrListView(1)}
+                        
+                    }}
+                >View {CalendarOrListView ? "List" : "Calendar"}
+                </Button>
+                <Button 
+                    size      = "large"
+                    onClick={() => {
+                        downloadICS();
+                    }}
+                >iCalendar file (.ics)
+                </Button>
+                
+            </Grid>
+        </div>
 
         {/* Show the Calendar view or the List View ternary */}
         {CalendarOrListView === 0 ?

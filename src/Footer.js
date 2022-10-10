@@ -63,7 +63,7 @@ function Footer()
               </Typography>
             </Grid>
 
-            <Grid container direction="row" justifyContent="flex-start" alignItems="center">
+            <Grid container direction="row" justifyContent="flex-start" alignItems="center" className='icons-in-footer'>
               <IconButton href='https://www.facebook.com/beefrepro/' className='icon-btn-links' ><FacebookIcon /></IconButton>
               <IconButton href='https://twitter.com/beef_repro' ><TwitterIcon /></IconButton>
               <IconButton href='https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber' ><YoutubeIcon /></IconButton> 

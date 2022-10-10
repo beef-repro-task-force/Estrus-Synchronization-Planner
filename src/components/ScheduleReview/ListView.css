@@ -20,6 +20,24 @@ td, th {
   width: 100%;
   max-width: 850px;
   margin: 0px auto 0px auto!important;
+  cursor: pointer;
+}
+
+.btn-box .MuiButtonBase-root{
+  color: #A23A41!important;
+  border: 2px solid #A23A41!important;
+  margin: 10px 15px!important;
+  
+}
+
+.calendar-btns .MuiButtonBase-root:hover{
+  background-color: white!important;
+}
+
+.calendar-btns .MuiButtonBase-root{
+  font-weight: bold!important;
+  color: #A23A41!important;
+
 }
 
 @media print {
@@ -32,6 +50,18 @@ td, th {
   }
 
   .MuiButtonBase-root{
+    visibility: hidden;
+  }
+
+  .bread-crumb-class{
+    visibility: hidden;
+  }
+
+  .copyright-footer-loc{
+    visibility: hidden;
+  }
+
+  .link-grid-footer{
     visibility: hidden;
   }
 

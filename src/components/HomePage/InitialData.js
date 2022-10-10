@@ -88,7 +88,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setBreedType(event.target.value)}} 
                 >
                     {Object.keys(BreedTypeData).map( (jsonKey, index) => {
-                        return <option key={index} value={BreedTypeData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={BreedTypeData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                     
                 </Select>
@@ -105,7 +105,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setSemenType(event.target.value)}} 
                 >
                     {Object.keys(SemenTypeData).map( (jsonKey, index) => {
-                        return <option key={index} value={SemenTypeData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={SemenTypeData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                     
                 </Select>
@@ -122,7 +122,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setSystemType(event.target.value)}} 
                 >
                     {Object.keys(SystemTypeData).map( (jsonKey, index) => {
-                        return <option key={index} value={SystemTypeData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={SystemTypeData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                     
                 </Select>
@@ -136,7 +136,7 @@ const InitialData = props => {
                 <InputLabel><strong>Date and Time to Start Breeding</strong></InputLabel>
                 <br />
                 <KeyboardDateTimePicker
-                    variant     = "dialogue"
+                    variant     = "inline"
                     label       = "Select Intended Start Date"
                     value       = { DateToStartBreeding }
                     onChange    = { ( value )=> setDateToStartBreeding( new Date(value) ) }
@@ -156,7 +156,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setGNRH(event.target.value)}} 
                 >
                     {Object.keys(GNRHData).map( (jsonKey, index) => {
-                        return <option key={index} value={GNRHData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={GNRHData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                 </Select>
             </FormControl>
@@ -172,7 +172,7 @@ const InitialData = props => {
                     onChange ={ ( event ) => {setPG(event.target.value)}} 
                 >
                     {Object.keys(PGData).map( (jsonKey, index) => {
-                        return <option key={index} value={PGData[jsonKey]} >{jsonKey}</option>      
+                        return <MenuItem key={index} value={PGData[jsonKey]} >{jsonKey}</MenuItem>      
                     })}
                 </Select>
             </FormControl>
@@ -212,8 +212,7 @@ const InitialData = props => {
                 onClick = {() => {CheckDataAndSubmit()}}
                 variant   = "outlined" 
                 size      = "large"
-                color     = "secondary"
-                
+                className='custom-btn-styling-stuff'
             >
             Submit
             </Button>

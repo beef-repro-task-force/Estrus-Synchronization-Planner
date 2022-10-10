@@ -720,12 +720,14 @@
             "step2": "Breed females AI 16-22 hours after standing heat."
         },
         {
+            "OnDay": "4",
             "step1": "Last day of heat detection.",
             "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
             "step3": "0.166666667",
             "step4": "0.666666667"
         },
         {
+            "OnDay": "18",
             "step1": "Turn clean up bulls in with females.",
             "step2": "Immediate addition of clean-up bulls could lead to questions about parentage. "
         },
@@ -1473,6 +1475,7 @@
             "step2": "( no time constraint )"
         },
         {
+            "OnDay": "-3",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
             "step3": " Apply estrus detection aid.",
@@ -1497,12 +1500,13 @@
         }
     ],
     "40": [{
-
+            "OnDay": "-10",
             "step1": "Insert one CIDR device in each female.",
             "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
             "step3": "( no time constraint )"
         },
         {
+            "OnDay": "-3",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
             "step3": "Apply estrus detection aid.",
@@ -1534,12 +1538,13 @@
         }
     ],
     "41": [{
-
+            "OnDay": "-9",
             "step1": "Insert one CIDR device in each female.",
             "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
             "step4": "( no time constraint )"
         },
         {
+            "OnDay": "-2",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
             "step3": "Apply estrus detection aid.",
@@ -1640,11 +1645,13 @@
         }
     ],
     "44": [{
+            "OnDay": "-10",
             "step1": "Insert one CIDR device in each female.",
             "step2": "Inject 2cc Cystorelin (GnRH) to all females.",
             "step4": "( no time constraint )"
         },
         {
+            "OnDay": "-3",
             "step1": "Remove the CIDR device from each female.",
             "step2": "Inject 5cc Lutalyse (PG) to all females.",
             "step3": "Apply estrus detection aid.",

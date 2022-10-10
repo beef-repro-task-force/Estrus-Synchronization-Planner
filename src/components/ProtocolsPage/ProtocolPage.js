@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 import SynchProtocolTitleData from "./SynchronozationProtocolTitles.json"
 import swal from 'sweetalert';
 import "./ProtocolPage.css"
@@ -567,6 +568,7 @@ const ProtocolPage = props => {
         
         <div className='protocol-div-container'>
 
+            <br />
             <Breadcrumbs className='bread-crumb-class'>
                 <Link onClick={() => {setUserFlow(UserFlow -1)}}>
                 Home
@@ -581,7 +583,7 @@ const ProtocolPage = props => {
             <br />
             <br />
             {/* Select Protocol */}
-            <FormControl variant = "outlined" className='Input-formcontrol-style'>
+            <FormControl variant = "filled" className='Input-formcontrol-style'>
                 <InputLabel>Select Protocol</InputLabel>
                 <Select 
                     className="InputStyle"
@@ -589,7 +591,7 @@ const ProtocolPage = props => {
                     onChange ={ ( event ) => {setSynchronizationProtocol(event.target.value)}} 
                 >
                      {filteredList.map( (jsonKey, index) => {
-                        return <option key={index} value={jsonKey} >{SynchProtocolTitleData[jsonKey].SynchronizationSystemTitle}</option>      
+                        return <MenuItem key={index} value={jsonKey} >{SynchProtocolTitleData[jsonKey].SynchronizationSystemTitle}</MenuItem>      
                     })}
                     
                 </Select>
@@ -599,15 +601,17 @@ const ProtocolPage = props => {
 
             <Button 
                 onClick = {() => {setUserFlow(UserFlow -1)}}
-                variant   = "contained" 
+                variant   = "outlined" 
                 size      = "large"
+                className='custom-btn-styling-stuff'
             >
             Return
             </Button>
             <Button 
                 onClick = {() => {CheckDataAndSubmit()}}
-                variant   = "contained" 
+                variant   = "outlined" 
                 size      = "large"
+                className='custom-btn-styling-stuff'
             >
             Submit
             </Button>

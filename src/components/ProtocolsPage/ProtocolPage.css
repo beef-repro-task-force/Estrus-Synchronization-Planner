@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 400px;
     margin: auto;
+    cursor: pointer;
 }
 
 .Input-formcontrol-style {
@@ -20,4 +21,15 @@
     min-height: 100%;
     margin: 0px auto 0px auto;
     position: relative;
+}
+
+.protocol-div-container .MuiButtonBase-root{
+    color: #A23A41!important;
+    border: 2px solid #A23A41!important;
+    margin: 10px 15px!important;
+    
+}
+
+.MuiButtonBase-root .custom-btn-styling-stuff:hover{
+    font-weight: bold!important;
 }

@@ -48,14 +48,14 @@
     text-decoration: none!important;
 }
 
+.icons-in-footer .MuiIconButton-root{
+    color: white!important;
+}
+
 .link-grid-footer {
     text-decoration: none!important;
     color: white;
     padding-top: 5px;
-}
-
-.MuiIconButton-root{
-    color: white!important;
 }
 
 .icon-btn-links{

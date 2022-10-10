@@ -17,3 +17,13 @@
     min-height: 100vh;
 }
 
+.custom-btn-styling-stuff{
+    color: #A23A41!important;
+    border: 2px solid #A23A41!important;
+    
+}
+
+.custom-btn-styling-stuff:hover{
+    font-weight: bold!important;
+}
+

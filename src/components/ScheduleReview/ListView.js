@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, List } from '@material-ui/core';
-import "./ListView.css"
+import Container from '@material-ui/core/Container';
+import "./ListView.css";
 import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-types';
 
 const ListView = props => {
-    const { ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
+    const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
 
 
 
@@ -163,49 +164,59 @@ const ListView = props => {
             <h2>Protocol #{SynchronizationProtocol}</h2>
 
             <div className="centerTable">
-            <table >
-                <tr>
-                    <th>Date</th>
-                    <th>Instructions</th>
-                </tr>
-                {ListOfInstrucitons.map(instruction => {
+                <table >
+                    <tr>
+                        <th>Date</th>
+                        <th>Instructions</th>
+                    </tr>
+                    {ListOfInstrucitons.map(instruction => {
 
-                    let tempDate = new Date(DateToStartBreeding)
-                    tempDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay))
+                        let tempDate = new Date(DateToStartBreeding)
+                        tempDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay))
 
-                    return(
-                        <tr >
-                            <td>
-                                { tempDate.getMonth() + 1} / { tempDate.getDate() } / { tempDate.getFullYear()} 
-                                <br />
-                                <br />
-                                { tempDate.toLocaleString('default', {weekday: 'long'}) }
-                            </td>
-                            <td className='instruction-section'>
-                                <br />
-                                {instruction.step1}<br/>
-                                {instruction.step2}<br/>
-                                {instruction.step3}<br/>
-                                {instruction.step4}<br/>
-                                {instruction.step5}<br/>
-                                <br />
-                            </td>
-                        </tr>
-                    )
-                })} 
-            </table>
-
+                        return(
+                            <tr >
+                                <td>
+                                    { tempDate.getMonth() + 1} / { tempDate.getDate() } / { tempDate.getFullYear()} 
+                                    <br />
+                                    <br />
+                                    { tempDate.toLocaleString('default', {weekday: 'long'}) }
+                                </td>
+                                <td className='instruction-section'>
+                                    <br />
+                                    {instruction.step1}<br/>
+                                    {instruction.step2}<br/>
+                                    {instruction.step3}<br/>
+                                    {instruction.step4}<br/>
+                                    {instruction.step5}<br/>
+                                    <br />
+                                </td>
+                            </tr>
+                        )
+                    })} 
+                </table>
             </div>
             <br/>
-            <Button 
-                variant   = "contained" 
-                size      = "large"
-                onClick={() => {
-                    window.print()
-                }    
-            }>
-                Print
-            </Button>
+            <Container maxWidth="sm" className='btn-box'>
+                <Button 
+                    variant   = "outlined" 
+                    size      = "large"
+                    onClick={() => {
+                        setUserFlow(UserFlow -1)
+                    }}
+                >Back
+                </Button>
+                <Button 
+                    variant   = "outlined" 
+                    size      = "large"
+                    onClick={() => {
+                        window.print()
+                    }    
+                }>
+                    Print
+                </Button>
+            </Container>
+            
         </>
     )
 }

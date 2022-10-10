@@ -45,6 +45,10 @@ body{
   color: white!important;
 }
 
+.navBar-area .MuiIconButton-root {
+  color: white!important;
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
