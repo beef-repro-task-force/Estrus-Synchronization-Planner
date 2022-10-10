@@ -116,6 +116,8 @@ const ParentView = props => {
         {/* Show the Calendar view or the List View ternary */}
         {CalendarOrListView === 0 ?
             <ListView 
+                UserFlow={UserFlow}
+                setUserFlow = {setUserFlow}
                 ListOfInstrucitons = {ListOfInstrucitons}
                 DateToStartBreeding={DateToStartBreeding}
                 SynchronizationProtocol = {SynchronizationProtocol}
