@@ -136,7 +136,7 @@ const InitialData = props => {
                 <InputLabel><strong>Date and Time to Start Breeding</strong></InputLabel>
                 <br />
                 <KeyboardDateTimePicker
-                    variant     = "inline"
+                    variant     = "dialog"
                     label       = "Select Intended Start Date"
                     value       = { DateToStartBreeding }
                     onChange    = { ( value )=> setDateToStartBreeding( new Date(value) ) }
