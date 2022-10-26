@@ -8,26 +8,29 @@ const ListView = props => {
     const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
 
 
-
+    let stringVarContainer = "";
+    var convertStrBackToJson;
     var selectedGNRH;
     var selectedPG;
 
     switch(true){
         case GNRH == 1:
-            selectedGNRH = "2cc Cystorelin";
+            selectedGNRH = "2cc Cystorelin (GnRH)";
             break;
         case GNRH == 2:
-            selectedGNRH = "2cc Factrel";
+            selectedGNRH = "2cc Factrel (GnRH)";
             break;
         case GNRH == 3:
-            selectedGNRH = "2cc Fertagyl";
+            selectedGNRH = "2cc Fertagyl (GnRH)";
             break;
         case GNRH == 4:
-            selectedGNRH = "2cc OvaCyst";
+            selectedGNRH = "2cc OvaCyst (GnRH)";
             break;
         case GNRH == 5:
-            selectedGNRH = "1cc GONAbreed";
+            selectedGNRH = "1cc GONAbreed (GnRH)";
             break;
+        case GNRH == 6:
+            selectedGNRH = "(GnRH)";
         default:
             break;
     }
@@ -36,25 +39,28 @@ const ListView = props => {
 
     switch(true){
         case PG == 1:
-            selectedPG = "2cc Estrumate";
+            selectedPG = "2cc Estrumate (PG)";
             break;
         case PG == 2:
-            selectedPG = "2cc EstroPLAN";
+            selectedPG = "2cc EstroPLAN (PG)";
             break;
         case PG == 3:
-            selectedPG = "5cc InSynch";
+            selectedPG = "5cc InSynch (PG)";
             break;
         case PG == 4:
-            selectedPG = "5cc Lutalyse";
+            selectedPG = "5cc Lutalyse (PG)";
             break;
         case PG == 5:
-            selectedPG = "5cc ProstaMate";
+            selectedPG = "5cc ProstaMate (PG)";
             break;
         case PG == 6:
-            selectedPG = "2cc HiConc.Lut.";
+            selectedPG = "2cc HiConc.Lut. (PG)";
             break;
         case PG == 7:
-            selectedPG = "2cc Synchsure";
+            selectedPG = "2cc Synchsure (PG)";
+            break;
+        case PG == 8:
+            selectedPG = "(PG)";
             break;
         default:
             break;
@@ -138,11 +144,13 @@ const ListView = props => {
                 }
 
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("2cc Cystorelin")){
-                    ListOfInstrucitons[i][stepX] = JSON.stringify(ListOfInstrucitons[i][stepX]).replace("2cc Cystorelin", selectedGNRH);
+                    
+                    ListOfInstrucitons[i][stepX] = JSON.parse(JSON.stringify(ListOfInstrucitons[i][stepX]).replace("2cc Cystorelin (GnRH)", selectedGNRH));
                 }
     
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("5cc Lutalyse")){
-                    ListOfInstrucitons[i][stepX] = JSON.stringify(ListOfInstrucitons[i][stepX]).replace("5cc Lutalyse", selectedPG);
+                    
+                    ListOfInstrucitons[i][stepX] = JSON.parse(JSON.stringify(ListOfInstrucitons[i][stepX]).replace("5cc Lutalyse (PG)", selectedPG));
                 }
             }
             

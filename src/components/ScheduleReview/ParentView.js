@@ -46,17 +46,19 @@ const ParentView = props => {
         let listOfEvents = []
 
         ListOfInstrucitons.map(instruction =>{
-            let description = (instruction.step1 === undefined ? "" : instruction.step1 ) + 
-                (instruction.step2 === undefined ? "" : instruction.step2 ) +
-                (instruction.step3 === undefined ? "" : instruction.step3 ) +
+            let description = (instruction.step1 === undefined ? "" : instruction.step1 ) + "\n" + 
+                (instruction.step2 === undefined ? "" : instruction.step2 ) + "\n" +
+                (instruction.step3 === undefined ? "" : instruction.step3 ) + "\n" +
                 (instruction.step4 === undefined ? "" : instruction.step4 );
 
             let eventDictionary = {}
             let ProtocolEventDate = new Date(DateToStartBreeding);
             ProtocolEventDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay));
 
+            //let eachDayTitle;
+
             //ics.createEvents api arguements found https://www.npmjs.com/package/ics
-            eventDictionary["title"] = "Estrus Event"
+            eventDictionary["title"] = instruction.step1;
             eventDictionary["description"] = description;
             eventDictionary["start"] = [ProtocolEventDate.getFullYear(), ProtocolEventDate.getMonth() + 1 ,ProtocolEventDate.getDate() ,ProtocolEventDate.getHours() ,ProtocolEventDate.getMinutes()]
             eventDictionary["duration"] = {hours: 1}
