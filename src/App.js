@@ -62,8 +62,8 @@ const App = () => {
           
         </AppBar>
 
-        <Route path = "/help"      component = { Help } />
-        <Route path = "/reference" component = { Reference } />
+        <Route path = "/help"> <Help /> </Route>
+        <Route path = "/reference"> <Reference /> </Route>
         <Route path = "/" exact > <HomePage /> </Route>
         
         
