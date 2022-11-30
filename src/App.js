@@ -62,8 +62,8 @@ const App = () => {
           
         </AppBar>
 
-        <Route path = "/help"> <Help /> </Route>
-        <Route path = "/reference"> <Reference /> </Route>
+        <Route path = "/help" element={<Help />} > </Route>
+        <Route path = "/reference" element={<Reference />} > </Route>
         <Route path = "/" exact > <HomePage /> </Route>
         
         
