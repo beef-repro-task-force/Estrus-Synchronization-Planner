@@ -10,6 +10,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import SynchProtocolTitleData from "./SynchronozationProtocolTitles.json"
 import swal from 'sweetalert';
 import "./ProtocolPage.css"
+import { FilterList } from '@material-ui/icons';
 
 const ProtocolPage = props => {
     const {
@@ -21,7 +22,7 @@ const ProtocolPage = props => {
     let filteredList = [];
     
     //Cow Prefferd #1
-    const CP1 = () => {
+    function CP1(){
         if(BreedType === 1 && SystemType === 1){
             //V39
             filteredList.push(7)
@@ -59,7 +60,7 @@ const ProtocolPage = props => {
     }
 
     //Cow Prefferd #2
-    const CP2 = () => {
+    function CP2 (){
         if(BreedType === 1 && SystemType === 1){
             //V46
             filteredList.push(14)
@@ -79,7 +80,7 @@ const ProtocolPage = props => {
     }
 
     //Cow Prefferd #3
-    const CP3 = () => {
+    function CP3(){
         if(BreedType === 1 && SystemType === 1){
             //V66
             filteredList.push(34)
@@ -88,12 +89,17 @@ const ProtocolPage = props => {
             if(BreedType === 1 && SystemType === 2){
                 //V65
                 filteredList.push(33)
+            }else{
+                if(BreedType === 1 && SemenType === 1 && SystemType === 3){
+                    //Y71
+                    filteredList.push(39)
+                }
             }
         }
     }
 
     //Cow Less Prefferd #1
-    const CLPS1 = () => {
+    function CLPS1(){
 
         if(BreedType === 1 && SystemType === 1){
             //V33
@@ -159,7 +165,7 @@ const ProtocolPage = props => {
     }
 
     //Cow Less Preffered #2
-    const CLPS2 = () => {
+    function CLPS2(){
         if(BreedType === 1 && SystemType === 1){
             //V34
             filteredList.push(2)
@@ -210,7 +216,7 @@ const ProtocolPage = props => {
     }
 
     //Cow Less Preffered #3
-    const CLPS3 = () => {
+    function CLPS3(){
         if(BreedType === 1 && SystemType === 1){
             //V35
             filteredList.push(3)
@@ -245,21 +251,15 @@ const ProtocolPage = props => {
     } 
 
     //Cow Less Preffered #4
-    const CLPS4 = () => {
+    function CLPS4(){
         if(BreedType === 1 && SystemType === 1){
             //V47
             filteredList.push(15)
         }
-        else{
-            if(BreedType === 1 && SemenType === 1 && SystemType === 3){
-                //V71
-                filteredList.push(39)
-            }
-        }
     }
 
     //Heifer Preffered System #1
-    const HP1 = () => {
+    function HP1(){
         if(BreedType === 1 && SystemType === 1){
             //V33
             filteredList.push(1)
@@ -299,7 +299,7 @@ const ProtocolPage = props => {
     }
 
     //Heifer Preffered System #2
-    const HP2 = () => {
+    function HP2(){
         if(BreedType === 1 && SystemType === 1){
             //V38
             filteredList.push(6)
@@ -325,7 +325,7 @@ const ProtocolPage = props => {
     }
 
     //Heifer Preffered System #3
-    const HP3 = () => {
+    function HP3(){
         if(BreedType === 1 && SystemType === 1){
             //V47
             filteredList.push(15)
@@ -351,7 +351,7 @@ const ProtocolPage = props => {
     }
     
     //Heifer Preffered System #4
-    const HP4 = () => {
+    function HP4(){
         if(BreedType === 1 && SystemType === 3){
             //V70
             filteredList.push(38)
@@ -365,15 +365,20 @@ const ProtocolPage = props => {
     }
     
     //Heifer Preffered System #5
-    const HP5 = () => {
+    function HP5(){
         if(BreedType === 1 && SemenType === 2 && SystemType === 3){
             //V75
             filteredList.push(43)
+        }else{
+            if(BreedType === 1 && SemenType === 1 & SystemType === 3){
+                //Y80
+                FilterList.push(48)
+            }
         }
     }
 
     //Heifer Less Preffered System #1
-    const HLPS1 = () => {
+    function HLPS1(){
         if(BreedType === 1 && SemenType === 1){
             //AC46
             if(SystemType === 1){
@@ -381,9 +386,14 @@ const ProtocolPage = props => {
                 filteredList.push(3)
             }
             else{
-                if(SystemType === 3){
-                    //V60
-                    filteredList.push(28)
+                if(SystemType === 2){
+                    //Y57
+                    filteredList.push(25)
+                }else{
+                    if(SystemType === 3){
+                        //V60
+                        filteredList.push(28)
+                    }
                 }
             }
         }
@@ -411,7 +421,7 @@ const ProtocolPage = props => {
     }
 
     //Heifer Less Preffered System #2
-    const HLPS2 = () => {
+    function HLPS2(){
         if(BreedType === 1 && SemenType === 1){
             //AC47
             if(SystemType === 1){
@@ -449,7 +459,7 @@ const ProtocolPage = props => {
     }
 
     //Heifer Less Preffered System #3
-    const HLPS3 = () => {
+    function HLPS3(){
         if(BreedType === 1 && SemenType === 1 ){ 
             //AC48
             if(SystemType === 1){
@@ -487,7 +497,7 @@ const ProtocolPage = props => {
     }
 
     //Heifer Less Preffered System #4
-    const HLPS4 = () => {
+    function HLPS4(){
         if(BreedType === 1 && SemenType === 1){
             //AC49
             if( SystemType === 1){
@@ -516,16 +526,18 @@ const ProtocolPage = props => {
         //If working with Cows
         if(CowOrHeifer === 1){
             //7 possible additions
-            //Preffered Systems
-            CP1();
-            CP2();
-            CP3();
-
             //Less Preffered Systems
             CLPS1();
             CLPS2();
             CLPS3();
             CLPS4();
+            
+            //Preffered Systems
+            CP1();
+            CP2();
+            CP3();
+            
+            
         }
         
         //If working with Heifers
@@ -550,7 +562,7 @@ const ProtocolPage = props => {
 
     console.log("props", props)    
     console.log("protocol list" ,filteredList)
-    console.log("you picked protocol #" , SynchronizationProtocol )    
+    console.log("you picked protocol #" , 4 )    
 
     const CheckDataAndSubmit = () =>
     {
@@ -591,7 +603,7 @@ const ProtocolPage = props => {
                     onChange ={ ( event ) => {setSynchronizationProtocol(event.target.value)}} 
                 >
                      {filteredList.map( (jsonKey, index) => {
-                        return <MenuItem key={index} value={jsonKey} >{SynchProtocolTitleData[jsonKey].SynchronizationSystemTitle}</MenuItem>      
+                        return <MenuItem key={index} value={jsonKey} >({jsonKey}) {SynchProtocolTitleData[jsonKey].SynchronizationSystemTitle}</MenuItem>      
                     })}
                     
                 </Select>
