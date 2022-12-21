@@ -602,9 +602,7 @@
         {
             "OnDay": "3",
             "step1": "Last day of heat detection.",
-            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
-            "step3": "0.166666667",
-            "step4": "0.666666667"
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females 72 to 84 hours after PG."
         },
         {
             "OnDay": "17",
@@ -722,9 +720,7 @@
         {
             "OnDay": "4",
             "step1": "Last day of heat detection.",
-            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
-            "step3": "0.166666667",
-            "step4": "0.666666667"
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females 72 to 84 hours after PG."
         },
         {
             "OnDay": "18",
@@ -1004,9 +1000,7 @@
         {
             "OnDay": "3",
             "step1": "Last day of heat detection.",
-            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
-            "step3": "0.166666667",
-            "step4": "0.666666667"
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females 72 to 84 hours after PG."
         },
         {
             "OnDay": "17",
@@ -1178,9 +1172,7 @@
         {
             "OnDay": "3",
             "step1": "Last day of heat detection.",
-            "step2": "Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
-            "step3": "0.333333333",
-            "step4": "0.5"
+            "step2": "Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females 72 to 84 hours after PG."
         },
         {
             "OnDay": "17",
@@ -1270,9 +1262,7 @@
         {
             "OnDay": "12",
             "step1": "Last day of heat detection.",
-            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females between the hours:",
-            "step3": "0.166666667",
-            "step4": "0.666666667"
+            "step2": "*Inject 2cc Cystorelin (GnRH) & inseminate nonestrous females 72 to 84 hours after PG."
         },
         {
             "OnDay": "26",

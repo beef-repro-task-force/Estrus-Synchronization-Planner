@@ -5,13 +5,12 @@ import "./ListView.css"
 import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-types';
 
 const ListView = props => {
-    const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
+    const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG,
+        SystemType, SemenType} = props;
 
-
-    let stringVarContainer = "";
-    var convertStrBackToJson;
     var selectedGNRH;
     var selectedPG;
+    var breedFemaleAi = "Breed females AI 10-14 hours after standing heat";
 
     switch(true){
         case GNRH == 1:
@@ -143,14 +142,23 @@ const ListView = props => {
                     marginOfErr = -1;
                 }
 
+                // edit the instructions to include the correctly selected Gnrh
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("2cc Cystorelin")){
                     
                     ListOfInstrucitons[i][stepX] = JSON.parse(JSON.stringify(ListOfInstrucitons[i][stepX]).replace("2cc Cystorelin (GnRH)", selectedGNRH));
                 }
     
+                // edit the instructions to include the correctly selected PG
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("5cc Lutalyse")){
                     
                     ListOfInstrucitons[i][stepX] = JSON.parse(JSON.stringify(ListOfInstrucitons[i][stepX]).replace("5cc Lutalyse (PG)", selectedPG));
+                }
+
+                // edit the "Female AI hours" in the instructions
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("Breed females AI 16-22 hours after standing heat.")){
+                    if((SystemType === 1 && SemenType === 1) || (SystemType === 2 && SemenType === 1)){
+                        ListOfInstrucitons[i][stepX] = JSON.parse(JSON.stringify(ListOfInstrucitons[i][stepX]).replace("Breed females AI 16-22 hours after standing heat", breedFemaleAi));
+                    }
                 }
             }
             

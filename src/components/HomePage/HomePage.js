@@ -71,6 +71,8 @@ const HomePage = () => {
                 PG={PG} 
                 BullTurnIn={BullTurnIn} 
                 GestationPeriod={GestationPeriod}
+                SystemType={SystemType}
+                SemenType={SemenType}
             />
         )
     }

@@ -16,7 +16,8 @@ const ParentView = props => {
     const {
         UserFlow, setUserFlow, DateToStartBreeding,
         SynchronizationProtocol, 
-        GNRH, PG, BullTurnIn, GestationPeriod 
+        GNRH, PG, BullTurnIn, GestationPeriod,
+        SystemType, SemenType 
     } = props;
 
     //Variable to determine what page we are on
@@ -127,6 +128,8 @@ const ParentView = props => {
                 PG={PG} 
                 BullTurnIn={BullTurnIn} 
                 GestationPeriod={GestationPeriod}
+                SystemType={SystemType}
+                SemenType={SemenType}
             />
             : 
             <CalendarView
