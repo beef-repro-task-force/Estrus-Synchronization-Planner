@@ -1,0 +1,103 @@
+{
+    "Cow Protocols Preferred":{
+        "1":{
+            "1":{
+                "conditions": { 
+                    "all":[{
+                        "fact": "BreedType",
+                        "operator": "equal",
+                        "value": "Bos Taurus"
+                    },{
+                        "fact": "SystemType",
+                        "operator": "equal",
+                        "value": "Estrus AI"
+                    }]
+                },
+                "event": { "type":"7" }
+            },
+            "2":{
+                "conditions":{
+                    "all":[{
+                        "fact":"BreedType",
+                        "operator":"equal",
+                        "value":"Bos Taurus"
+                    },{
+                        "fact":"SystemType",
+                        "operator":"equal",
+                        "value":"Estrus AI & Clean-Up AI"
+                    }]
+                },
+                "event":{ "type":"16"}
+            },
+            "3":{
+                "conditions":{
+                    "all":[{
+                        "fact":"BreedType",
+                        "operator":"equal",
+                        "value":"Bos Taurus"
+                    },{
+                        "fact":"SystemType",
+                        "operator":"equal",
+                        "value":"Fixed-Time AI"
+                    }]
+                },
+                "event":{ "type":"22"}
+            },
+            "4":{
+                "conditions":{
+                    "all":[{
+                        "fact":"BreedType",
+                        "operator":"equal",
+                        "value":"Bos Taurus"
+                    },{
+                        "fact":"SemenType",
+                        "operator":"equal",
+                        "value":"Conventional"
+                    },{
+                        "fact":"SystemType",
+                        "operator":"equal",
+                        "value":"Split Time AI"
+                    }]
+                },
+                "event":{ "type":"40"}
+            },
+            "5":{
+                "conditions":{
+                    "all":[{
+                        "fact":"BreedType",
+                        "operator":"equal",
+                        "value":"Bos Taurus"
+                    },{
+                        "fact":"SemenType",
+                        "operator":"equal",
+                        "value":"Conventional & Sexed"
+                    },{
+                        "fact":"SystemType",
+                        "operator":"equal",
+                        "value":"Split Time AI"
+                    }]
+                },
+                "event":{ "type":"44"}
+            },
+            "6":{
+                "conditions":{
+                    "all":[{
+                        "fact":"BreedType",
+                        "operator":"equal",
+                        "value":"Bos Indicus"
+                    },{
+                        "fact":"SemenType",
+                        "operator":"equal",
+                        "value":"Conventional"
+                    },{
+                        "fact":"SystemType",
+                        "operator":"equal",
+                        "value":"Fixed-Time AI"
+                    }]
+                },
+                "event":{ "type":"37"}
+            }
+        }
+    }
+
+}

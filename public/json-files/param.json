@@ -1,0 +1,155 @@
+{
+    "Parameters":
+    [
+        {
+            "Cow or Heifer":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name":"Cow"
+                },
+                {
+                    "id":2,
+                    "name":"Heifer"
+                }
+            ]
+        },
+        {
+            "Breed Type":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name":"Bos Taurus"
+                },
+                {
+                    "id":2,
+                    "name":"Bos Indicus"
+                }
+            ]
+        },
+        {
+            "Semen Type":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name":"Conventional"
+                },
+                {
+                    "id":2,
+                    "name":"Conventional & Sexed"
+                }
+            ]
+        },
+        {
+            "System Type":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name":"Estrus AI"
+                },
+                {
+                    "id":2,
+                    "name":"Estrus AI & Clean-Up AI"
+                },
+                {
+                    "id":3,
+                    "name":"Fixed-Time AI"
+                },
+                {
+                    "id":4,
+                    "name":"Split Time AI"
+                }
+            ]
+        },
+        {
+            "GnRH":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name": "GnRH"
+                },
+                {
+                    "id":2,
+                    "name": "Cystorelin"
+                },
+                {
+                    "id":3,
+                    "name": "Factrel"
+                },
+                {
+                    "id":4,
+                    "name": "Fertagyl"
+                },
+                {
+                    "id":5,
+                    "name": "OvaCyst"
+                },
+                {
+                    "id":6,
+                    "name": "GONAbreed"
+                }
+            ]
+        },
+        {
+            "PG":
+            [
+                {
+                    "id":0,
+                    "name": "Select an Option"
+                },
+                {
+                    "id":1,
+                    "name": "PG"
+                },
+                {
+                    "id":2,
+                    "name": "Estrumate"
+                },
+                {
+                    "id":3,
+                    "name": "EstroPLAN"
+                },
+                {
+                    "id":4,
+                    "name": "InSynch"
+                },
+                {
+                    "id":5,
+                    "name": "Lutalyse"
+                },
+                {
+                    "id":6,
+                    "name": "ProstaMate"
+                },
+                {
+                    "id":7,
+                    "name": "HiConc.Lutalyse"
+                },
+                {
+                    "id":8,
+                    "name": "Synchsure"
+                }
+            ]
+        }
+    ]
+}

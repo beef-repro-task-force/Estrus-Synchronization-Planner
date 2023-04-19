@@ -1,0 +1,1674 @@
+{
+    "Cow Preferred Systems": {
+        "1": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "7"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "16"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "22"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "40"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "44"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "37"
+                }
+            }
+        ],
+        "2": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "14"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "19"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "29"
+                }
+            }
+        ],
+        "3": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "34"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "33"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "39"
+                }
+            }
+        ]
+    },
+    "Cow Less Preferred Systems": {
+        "1": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "1"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "25"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "10"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "7"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "16"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "39"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "7"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "16"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "22"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "37"
+                }
+            }
+        ],
+        "2": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "2"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "13"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "14"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": ""
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": ""
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "14"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "19"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "29"
+                }
+            }
+        ],
+        "3": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "3"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "35"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "34"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "34"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "33"
+                }
+            }
+        ],
+        "4": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "15"
+                }
+            }
+        ]
+    },
+    "Heifer Preferred Systems": {
+        "1": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "1"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "16"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "23"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "41"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "44"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "42"
+                }
+            }
+        ],
+        "2": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "6"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "26"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "27"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "45"
+                }
+            }
+        ],
+        "3": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "15"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "31"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "32"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "46"
+                }
+            }
+        ],
+        "4": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "38"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "47"
+                }
+            }
+        ],
+        "5": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional & Sexed"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "43"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "48"
+                }
+            }
+        ]
+    },
+    "Heifer Less Preferred Systems": {
+        "1": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "3"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "25"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "28"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "1"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "16"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "23"
+                }
+            }
+        ],
+        "2": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "12"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "36"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "6"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "26"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "27"
+                }
+            }
+        ],
+        "3": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "14"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "43"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "15"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "31"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "32"
+                }
+            }
+        ],
+        "4": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Taurus"
+                        },
+                        {
+                            "fact": "SemenType",
+                            "operator": "equal",
+                            "value": "Conventional"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "30"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "30"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "BreedType",
+                            "operator": "equal",
+                            "value": "Bos Indicus"
+                        },
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "37"
+                }
+            }
+        ]
+    },
+    "Selected System Type Protocol Header": {
+        "1": [
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "Heat Detect & Breed"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Estrus AI + Clean-up AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "Heat Detect & Clean-up AI"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Fixed-Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "Fixed-Time AI"
+                }
+            },
+            {
+                "conditions": {
+                    "all": [
+                        {
+                            "fact": "SystemType",
+                            "operator": "equal",
+                            "value": "Split Time AI"
+                        }
+                    ]
+                },
+                "event": {
+                    "type": "Split Time AI"
+                }
+            }
+        ]
+    }
+}

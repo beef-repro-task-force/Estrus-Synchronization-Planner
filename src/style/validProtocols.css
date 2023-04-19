@@ -1,0 +1,9 @@
+.protocol-div-container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 80vh;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
