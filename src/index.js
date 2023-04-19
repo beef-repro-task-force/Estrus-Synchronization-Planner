@@ -10,7 +10,7 @@ import "./style/index.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
-    <BrowserRouter basename='/fall2022-j8sh'>
+    <BrowserRouter basename='/Estrus-Synchronization-Planner'>
       <App />
     </BrowserRouter>
   //</React.StrictMode>
