@@ -51,7 +51,7 @@ function Home(){
 
     // grab the data from the json file and split it into arrays
     useEffect(()=>{
-        fetch("fall2022-j8sh/json-files/data.json")
+        fetch("/Estrus-Synchronization-Planner/json-files/data.json")
         .then(response => response.json())
         .then(data => {
             setData(data);
