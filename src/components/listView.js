@@ -6,12 +6,51 @@ import "../style/listView.css";
 //import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-types';
 
 const ListView = props => {
-    const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
+    const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG, SemenType} = props;
 
     let stringVarContainer = "";
     var convertStrBackToJson;
     var selectedGNRH;
     var selectedPG;
+    // text changes
+    let ai_standing_heat_txt = "";
+    let ai_with_sexed_semen = "";
+    let ai_with_sexed_semen_showing = "";
+    let ai_with_sexed_semen_plus_conventional = "";
+    let nonestrous_females = "";
+    let cidr_device = "";
+
+    //store if breed females AI 16-22....
+    // G14 -> Semen Type
+    if(SemenType == "Conventional & Sexed"){
+        ai_standing_heat_txt = "Breed females AI 16-22 hours after standing heat.";
+        ai_with_sexed_semen = "AI with sexed semen estrous females";
+        ai_with_sexed_semen_showing = "AI with sexed semen those showing females estrus";
+        ai_with_sexed_semen_plus_conventional = "AI with sexed semen estrous females.  All others with conventional semen.";
+        nonestrous_females = "Inject 2cc Cystorelin (GnRH) to nonestrous females.";
+        cidr_device = "Remove the CIDR device and apply estrus detection aid for each female.";
+    }else{
+        ai_standing_heat_txt = "Breed females AI 10-14 hours after standing heat.";
+        ai_with_sexed_semen = "AI females in estrus";
+        ai_with_sexed_semen_showing = "AI females in estrus";
+        ai_with_sexed_semen_plus_conventional = "AI females in estrus";
+        nonestrous_females = "Inject 2cc Cystorelin (GnRH) to all females.";
+        cidr_device = "Remove the CIDR device from each female.";
+    }
+
+    //search instruction for <<ai_after_standing_heat>>
+    ListOfInstrucitons.forEach(item => {
+        for (let param in item){
+            if(item[param] == "<<ai_after_standing_heat>>") item[param] = ai_standing_heat_txt;
+            if(item[param] == "<<ai_sexed_semen>>") item[param] = ai_with_sexed_semen;
+            if(item[param] == "<<ai_with_sexed_semen_showing>>") item[param] = ai_with_sexed_semen_showing;
+            if(item[param] == "<<ai_with_sexed_semen_plus_conventional>>") item[param] = ai_with_sexed_semen_plus_conventional;
+            if(item[param] == "<<nonestrous>>") item[param] = nonestrous_females;
+            if(item[param] == "<<cidr_device>>") item[param] = cidr_device;
+        }
+    });
+
+    console.log(ListOfInstrucitons);
 
     switch(true){
         case GNRH === "Cystorelin":
@@ -67,7 +106,6 @@ const ListView = props => {
     }
 
     console.log("the selected PG: " + selectedPG);
-
 
     // fixing some timing issues
     const length = Object.keys(ListOfInstrucitons).length;
@@ -156,6 +194,51 @@ const ListView = props => {
 
         } // end of inner for loop
     } // end of main for loop
+
+    //switch case each protocol until i figure out how to do this shit
+    /*switch(SynchronizationProtocol){
+        case "1":
+            ListOfInstrucitons = [
+                {
+                    onDay: 0,
+                    step1: 'Start heat detection.',
+                    step2: semenTypeTxt
+                },
+                {
+                    onDay: 5,
+                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
+                    step2: semenTypeTxt,
+                    step3: '( no time constraint )'
+                },
+                {
+                    onDay: 8,
+                    step1: 'Continue heat detection',
+                    step2: semenTypeTxt
+                },
+                {
+                    onDay: 12,
+                    step1: 'Last clean up bulls',
+                    step2: semenTypeTxt,
+                    step3: '( no time constraint )'
+                },
+                {
+                    onDay: 26,
+                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
+                    step2: semenTypeTxt,
+                    step3: '( no time constraint )'
+                },
+                {
+                    onDay: 26,
+                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
+                    step2: semenTypeTxt,
+                    step3: '( no time constraint )'
+                }             
+            ];
+            
+            break;
+        default:
+            break;
+    }*/
 
     const leadingZeroesHours = (DateObject) =>{
         return (DateObject.getHours() < 10 ? '0' : '') + DateObject.getHours();

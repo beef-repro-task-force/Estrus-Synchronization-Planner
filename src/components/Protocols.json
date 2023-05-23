@@ -85,23 +85,23 @@
                     {
                         "OnDay": 0,
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": 5,
                         "step1": "Inject (PG) to all females not detected in heat.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": 8,
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": 12,
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": 26,
@@ -155,20 +155,20 @@
                     {
                         "OnDay": "0",
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Peak heat at 36 - 72 hours after PG."
                     },
                     {
                         "OnDay": "5",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "19",
@@ -233,17 +233,17 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "5",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "19",
@@ -297,7 +297,7 @@
                     {
                         "OnDay": "0",
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
                         "step4": "( no time constraint )"
                     },
@@ -310,14 +310,14 @@
                     {
                         "OnDay": "5",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "10",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "24",
@@ -384,24 +384,24 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Peak heat at 60 - 72 hours after PG.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "5",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "19",
@@ -468,24 +468,24 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Peak heat at 60 - 72 hours after PG.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "6",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "20",
@@ -544,12 +544,12 @@
                     {
                         "OnDay": "0",
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to all females not detected in heat.",
                         "step4": "( no time constraint )"
                     },
@@ -557,12 +557,12 @@
                         "OnDay": "3",
                         "step1": "Peak heat at 36 - 72 hours after PG.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "7",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "21",
@@ -634,24 +634,24 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Peak heat at 60 - 72 hours after PG.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "5",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "19",
@@ -720,17 +720,17 @@
                         "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
                         "step2": "0.166666667",
                         "step3": "Start heat detection.",
-                        "step4": "Breed females AI 16-22 hours after standing heat."
+                        "step4": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -936,24 +936,24 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Peak heat at 48 - 60 hours after PG.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "5",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "19",
@@ -1090,18 +1090,18 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
                         "step2": "Peak heat at 36 - 48 hours after PG.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "6",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "20",
@@ -1167,18 +1167,18 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Peak period for females in heat if CIDR is removed early in day.",
                         "step2": "Continue heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "6",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "20",
@@ -1244,12 +1244,12 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -1471,19 +1471,19 @@
                     {
                         "OnDay": "0",
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to females not bred AI at:",
                         "step4": "0.166666667"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "4",
@@ -1561,17 +1561,17 @@
                         "step1": "Inject 5cc Lutalyse (PG) to all females at:",
                         "step2": "0.166666667",
                         "step3": "Start heat detection.",
-                        "step4": "Breed females AI 16-22 hours after standing heat."
+                        "step4": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -1637,18 +1637,18 @@
                     {
                         "OnDay": "0",
                         "step1": "Start heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat.",
+                        "step2": "<<ai_after_standing_heat>>",
                         "step3": "Inject 5cc Lutalyse (PG) to all females.",
                         "step4": "0.166666667"
                     },
                     {
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "5",
@@ -1721,7 +1721,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.291666667",
@@ -1791,7 +1791,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
@@ -1862,13 +1862,13 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
                         "step2": "Peak heat at 60 - 72 hours after PG.",
-                        "step3": "Breed females AI 16-22 hours after standing heat."
+                        "step3": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -1941,12 +1941,12 @@
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -2020,18 +2020,18 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Continue heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -2108,7 +2108,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
@@ -2247,7 +2247,7 @@
                     },
                     {
                         "OnDay": "-3",
-                        "step1": "Remove the CIDR device and apply estrus detection aid for each female.",
+                        "step1": "<<cidr_device>>",
                         "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
                         "step3": "0.416666667",
                         "step4": "Give 2nd injection, 5cc Lutalyse (PG) to all females 8 +/-2 hours after first injection"
@@ -2323,13 +2323,13 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "6",
                         "step1": "Last day of heat detection.",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "20",
@@ -2394,7 +2394,7 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females at: ",
                         "step2": "Start heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": ""
                     },
                     {
@@ -2471,7 +2471,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
@@ -2530,18 +2530,18 @@
                         "OnDay": "0",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "Begin heat detection.",
-                        "step3": "Breed females AI 16-22 hours after standing heat.",
+                        "step3": "<<ai_after_standing_heat>>",
                         "step4": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -2558,12 +2558,12 @@
                     {
                         "OnDay": "10",
                         "step1": "Continue heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "11",
                         "step1": "Continue heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "12",
@@ -2622,17 +2622,17 @@
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
                         "step2": "( no time constraint )",
                         "step3": "Begin heat detection.",
-                        "step4": "Breed females AI 16-22 hours after standing heat."
+                        "step4": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "1",
                         "step1": "Heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "2",
                         "step1": "Heat detection",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "3",
@@ -2649,12 +2649,12 @@
                     {
                         "OnDay": "10",
                         "step1": "Continue heat detection for 3 more days",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "12",
                         "step1": "Last day of heat detection & breeding",
-                        "step2": "Breed females AI 16-22 hours after standing heat."
+                        "step2": "<<ai_after_standing_heat>>"
                     },
                     {
                         "OnDay": "26",
@@ -2934,7 +2934,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.25",
@@ -3009,7 +3009,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
@@ -3079,14 +3079,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step3": "Target first breeding time between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3156,14 +3156,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen those showing females estrus",
+                        "step1": "<<ai_with_sexed_semen_showing>>",
                         "step3": "Target first breeding time between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3378,14 +3378,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step3": "Target first breeding time between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females.  All others with conventional semen.",
+                        "step1": "<<ai_with_sexed_semen_plus_conventional>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3458,14 +3458,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step2": "Target first breeding time between:",
                         "step3": "0.333333333",
                         "step4": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3535,14 +3535,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen those showing estrus",
+                        "step1": "<<ai_with_sexed_semen_showing>>",
                         "step3": "Target first breeding time between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3617,14 +3617,14 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "AI with sexed semen estrous females",
+                        "step1": "<<ai_sexed_semen>>",
                         "step3": "Target first breeding time between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "AI with sexed semen estrous females.  All others with conventional semen.",
+                        "step1": "<<ai_with_sexed_semen_plus_conventional>>",
                         "step2": "Nonestrous females receive 2cc Cystorelin (GnRH)",
                         "step3": "AI remaining females between the hours:",
                         "step4": "0.333333333",
@@ -3700,7 +3700,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",

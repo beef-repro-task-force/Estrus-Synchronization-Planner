@@ -142,6 +142,7 @@ function Home(){
                     PG={PG} 
                     BullTurnIn={BullTurnIn} 
                     GestationPeriod={GestationPeriod}
+                    SemenType={SemenType}
                 />
             )
         }
