@@ -615,7 +615,8 @@
                 "instructions": [
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change>>"
                     },
                     {
                         "OnDay": "-19",
@@ -700,7 +701,8 @@
                 "instructions": [
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change>>"
                     },
                     {
                         "OnDay": "-19",
@@ -919,7 +921,8 @@
                 "instructions": [
                     {
                         "OnDay": "-17",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change_2>>"
                     },
                     {
                         "OnDay": "-11",
@@ -1007,17 +1010,17 @@
                     {
                         "OnDay": "-10",
                         "step1": "Inject 2cc Cystorelin (GnRH) to all females.",
-                        "step2": ""
+                        "step2": "0.666666667"
                     },
                     {
                         "OnDay": "-3",
                         "step1": "Inject 5cc Lutalyse (PG) to all females.",
-                        "step2": ""
+                        "step2": "0.666666667"
                     },
                     {
                         "OnDay": "-1",
                         "step1": "Inject 2cc Cystorelin (GnRH) to all females at: ",
-                        "step2": ""
+                        "step2": "0.666666667"
                     },
                     {
                         "OnDay": "0",
@@ -1309,7 +1312,8 @@
                 "instructions": [
                     {
                         "OnDay": "-35",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change>>"
                     },
                     {
                         "OnDay": "-22",
@@ -1387,7 +1391,8 @@
                 "instructions": [
                     {
                         "OnDay": "-23",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change>>"
                     },
                     {
                         "OnDay": "-10",
@@ -1543,7 +1548,8 @@
                 "instructions": [
                     {
                         "OnDay": "-17",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change_2>>"
                     },
                     {
                         "OnDay": "-11",
@@ -1716,13 +1722,13 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females.",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "+9hrs"
                     },
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.291666667",
                         "step5": "0.541666667"
@@ -1786,13 +1792,13 @@
                         "OnDay": "-2",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) to all females at:",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "+18hrs"
                     },
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -2006,7 +2012,8 @@
                 "instructions": [
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change>>"
                     },
                     {
                         "OnDay": "-19",
@@ -2091,7 +2098,8 @@
                 "instructions": [
                     {
                         "OnDay": "-35",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change_3>>"
                     },
                     {
                         "OnDay": "-22",
@@ -2104,12 +2112,12 @@
                     {
                         "OnDay": "-3",
                         "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-                        "step2": "0.416666667"
+                        "step2": "<<estrus_detection_aid>>"
                     },
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -2255,7 +2263,7 @@
                     {
                         "OnDay": "0",
                         "step1": "Inject 2cc Cystorelin (GnRH) to all nonestrous females.",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -2466,13 +2474,13 @@
                     {
                         "OnDay": "-3",
                         "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-                        "step2": "Apply estrus detection aid.",
+                        "step2": "<<estrus_detection_aid>>",
                         "step3": "0.666666667"
                     },
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -2935,7 +2943,7 @@
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.25",
                         "step5": "0.583333333"
@@ -3004,13 +3012,13 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
-                        "step3": " Apply estrus detection aid.",
+                        "step3": " <<estrus_detection_aid>>",
                         "step4": "0.666666667"
                     },
                     {
                         "OnDay": "0",
                         "step1": "<<nonestrous>>",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -3074,7 +3082,7 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) to all females.",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "-15hrs"
                     },
                     {
@@ -3151,7 +3159,7 @@
                         "OnDay": "-2",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) to all females.",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "0.166666667"
                     },
                     {
@@ -3228,7 +3236,7 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females.",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "0.416666667"
                     },
                     {
@@ -3303,13 +3311,13 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females. ",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "0.416666667"
                     },
                     {
                         "OnDay": "0",
                         "step1": "Inject 2cc Cystorelin (GnRH) in all nonestrous females.",
-                        "step2": "AI females showing estrus with sexed semen.  All others with conventional semen.",
+                        "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
                         "step5": "0.5"
@@ -3373,7 +3381,7 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) to all females.",
-                        "step3": "Apply estrus detection aid.",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "-18hrs"
                     },
                     {
@@ -3599,7 +3607,8 @@
                 "instructions": [
                     {
                         "OnDay": "-35",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "<<mga_time_change_3>>"
                     },
                     {
                         "OnDay": "-22",
