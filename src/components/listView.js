@@ -27,15 +27,10 @@ const ListView = props => {
     let mga_time_change_2 = new Date();
     let mga_time_change_3 = new Date();
 
-    mga_time_change.setDate(DateToStartBreeding.getDate() - 19)
-    mga_time_change_2.setDate(DateToStartBreeding.getDate() - 11)
-    mga_time_change_3.setDate(DateToStartBreeding.getDate() - 22)
+    mga_time_change.setDate(DateToStartBreeding.getDate() - 19);
+    mga_time_change_2.setDate(DateToStartBreeding.getDate() - 11);
+    mga_time_change_3.setDate(DateToStartBreeding.getDate() - 22);
     //console.log(changingTime)
-
-    // if protocol 8
-    /*if(SynchronizationProtocol === "8"){
-        changingTime.setDate(DateToStartBreeding.getDate() - 19)
-    }*/
 
     //store if breed females AI 16-22....
     // G14 -> Semen Type
@@ -197,6 +192,9 @@ const ListView = props => {
                 }
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+9hrs")){
                     marginOfErr = 9;
+                }
+                if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+12hrs")){
+                    marginOfErr = 12;
                 }
                 if(JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+18hrs")){
                     marginOfErr = 18;
