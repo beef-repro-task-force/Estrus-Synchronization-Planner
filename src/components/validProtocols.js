@@ -1,8 +1,6 @@
-import {React, useCallback, useEffect, useState} from "react";
-import { FormControl, InputLabel, MenuItem, Select, Button,
-        List, ListItem, ListItemButton, ListItemText,
-        Box, ButtonGroup } from "@mui/material";
-import swal from 'sweetalert';
+import {React, useEffect} from "react";
+import { Button, ButtonGroup } from "@mui/material";
+//import swal from 'sweetalert';
 import ProtocolData from "../components/Protocols.json";
 
 import '../style/validProtocols.css';
@@ -11,7 +9,7 @@ const ValidProtocols = props => {
     const {
         UserFlow, setUserFlow, 
         BreedType, CowOrHeifer, SemenType,
-        SystemType, SynchronizationProtocol, setSynchronizationProtocol,
+        SystemType, setSynchronizationProtocol,
         preferList, setPreferList, lessPreferList, setLessPreferList
     } = props;
 
@@ -63,13 +61,13 @@ const ValidProtocols = props => {
 
                     
                     data.events.forEach((item) => {
-                        console.log(item);
+                        //console.log(item);
                         //setPreferList([...preferList, item.type]);
                         protocolsArr.push(item.type);
                     });
                     
                 } 
-                console.log("protocolsArr " , protocolsArr);
+                //console.log("protocolsArr " , protocolsArr);
                 setPreferList(protocolsArr);
             }  
 
@@ -93,20 +91,19 @@ const ValidProtocols = props => {
 
                 
                 data.events.forEach((item) => {
-                    console.log(item);
+                    //console.log(item);
                     //setPreferList([...preferList, item.type]);
                     protocolsArr.push(item.type);
                 });
                 
             } 
-            console.log("protocolsArr " , protocolsArr);
             setLessPreferList(protocolsArr);
         }  
 
             fetchData1().catch(console.error);
     }, [])
 
-    
+
     return(
         <div className='protocol-div-container'>
             <br />
@@ -119,16 +116,16 @@ const ValidProtocols = props => {
             variant="text"
             >
             {preferList.map((item, index) => {
-
-                        return(
-                            <Button 
-                            key={index} 
-                            onClick={() => {setSynchronizationProtocol(item); setUserFlow(UserFlow +1)}}
-                            > 
-                                ({item}) {SynchProtocolTitleData[item].SynchronizationSystemTitle} 
-                            </Button>
-                        )
-                    })}
+                if(item !== ""){ 
+                    return(
+                        <Button 
+                        key={index} 
+                        onClick={() => {setSynchronizationProtocol(item); setUserFlow(UserFlow +1)}}
+                        > 
+                            ({item}) {SynchProtocolTitleData[item].SynchronizationSystemTitle} 
+                        </Button>
+                    )
+                }})}
             </ButtonGroup>
 
            
@@ -139,15 +136,16 @@ const ValidProtocols = props => {
             variant="text"
             >
                 {lessPreferList.map((item, index) => {
-                    return(
-                        <Button 
-                        key={index} 
-                        onClick={() => {setSynchronizationProtocol(item);setUserFlow(UserFlow +1)}}
-                        > 
-                            ({item}) {SynchProtocolTitleData[item].SynchronizationSystemTitle} 
-                        </Button>
-                    )
-                })}
+                    if(item !== "" ){
+                        return(
+                            <Button 
+                            key={index} 
+                            onClick={() => {setSynchronizationProtocol(item);setUserFlow(UserFlow +1)}}
+                            > 
+                                ({item}) {SynchProtocolTitleData[item].SynchronizationSystemTitle} 
+                            </Button>
+                        )
+                    }})}
                 
             </ButtonGroup>
             </div>

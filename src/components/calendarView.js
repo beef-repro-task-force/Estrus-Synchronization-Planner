@@ -6,26 +6,27 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import '../style/calendarView.css';
 
 const CalendarView = props => {
-    const { ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG} = props;
+    const { ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol } = props;
+
+    console.log(ListOfInstrucitons);
     
     let ListOfInstructionsCalendarFormat = [...ListOfInstrucitons.map(instruction => {
         let tempDate = new Date(DateToStartBreeding)
         tempDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay))
 
         return({
-            "date": `${tempDate.getFullYear()}-${tempDate.getMonth() + 1}-${tempDate.getDate()}`,
-            "title": `${instruction.step1} ${instruction.step2} ${instruction.step3} ${instruction.step4} `
-            
+            "title": `${instruction.step1} ${instruction.step2} ${instruction.step3} ${instruction.step4}`,
+            "start": `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1).toString().padStart(2, '0')}-${tempDate.getDate().toString().padStart(2, '0')}`
         })
     })]
 
+
     console.log({ListOfInstructionsCalendarFormat})
-    
     return (
         <div className='calendar-container'>
             <h2>Protocol #{SynchronizationProtocol}</h2>
 
-            <div className = "toPrint">
+            <div>
                     <FullCalendar   
                         plugins             = { [ dayGridPlugin ] }
                         //schedulerLicenseKey = { 'GPL-My-Project-Is-Open-Source' } 

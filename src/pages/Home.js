@@ -28,11 +28,11 @@ function Home(){
     const [lessPreferList , setLessPreferList] = useState([]);
     // arrays for user selections
     const [CowOrHeiferArr, setCowOrHeiferArr] = useState([]);
-    const [BreedTypeArr , setBreedTypeArr] = useState([])
-    const [SemenTypeArr , setSemenTypeArr] = useState([])
-    const [SystemTypeArr , setSystemTypeArr] = useState([])
-    const [GNRHArr , setGNRHArr] = useState([])
-    const [PGArr , setPGArr] = useState([])
+    //const [BreedTypeArr , setBreedTypeArr] = useState([])
+    //const [SemenTypeArr , setSemenTypeArr] = useState([])
+    //const [SystemTypeArr , setSystemTypeArr] = useState([])
+    //const [GNRHArr , setGNRHArr] = useState([])
+    //const [PGArr , setPGArr] = useState([])
 
     // grab the data from the json file and split it into arrays
     /*useEffect(()=>{
@@ -59,7 +59,7 @@ function Home(){
             setParameters(data.Parameters)
             setEngineRules(data.Rules)
             setProtocols(data.Protocols)
-            console.log({data})
+            //console.log({data})
         })
         .catch(error => {
             console.error("Error fetching data: ", error);
@@ -72,10 +72,10 @@ function Home(){
     
     }, [])
 
-    console.log({parameters})
-    console.log({protocols})
-    console.log({engineRules})
-    console.log({CowOrHeiferArr})
+    // console.log({parameters})
+    // console.log({protocols})
+    // console.log({engineRules})
+    // console.log({CowOrHeiferArr})
     
         if(UserFlow === 1){
             return (
@@ -150,72 +150,3 @@ function Home(){
 }
 
 export default Home;
-
-/*
-return (      
-        <div>
-            <Header />
-            <Navbar />
-
-            <UserInput 
-                BreedType={BreedType}
-                CowOrHeifer ={CowOrHeifer}
-                SystemType={SystemType}
-                SemenType ={SemenType}
-                DateToStartBreeding={DateToStartBreeding}
-                GNRH={GNRH} 
-                PG={PG} 
-                BullTurnIn={BullTurnIn} 
-                GestationPeriod={GestationPeriod}
-                setSemenType={setSemenType}
-                setBreedType={setBreedType}
-                setCowOrHeifer ={setCowOrHeifer}
-                setSystemType={setSystemType}
-                setDateToStartBreeding={setDateToStartBreeding} 
-                setGNRH={setGNRH} 
-                setPG={setPG} 
-                setBullTurnIn={setBullTurnIn} 
-                setGestationPeriod={setGestationPeriod} 
-                UserFlow={UserFlow}
-                setUserFlow = {setUserFlow}
-            />
-
-            <br />
-            <br />
-            <hr />
-            <br />
-
-            {
-                BreedType   === "0" ||
-                CowOrHeifer === "0" ||
-                SemenType   === "0" ||
-                SystemType  === "0" ||
-                BullTurnIn  === 0 ||
-                GestationPeriod  === 0 ? 
-                    'filled in the inputs above' : 
-                    <ValidProtocols
-                        BreedType={BreedType}
-                        SemenType = {SemenType}
-                        SystemType={SystemType}
-                        CowOrHeifer ={CowOrHeifer}
-                        DateToStartBreeding={DateToStartBreeding}
-                        SynchronizationProtocol = {SynchronizationProtocol}
-                        setSynchronizationProtocol = {setSynchronizationProtocol}
-                        UserFlow={UserFlow}
-                        setUserFlow = {setUserFlow}
-                    />
-            }
-
-            <br />
-            <br />
-            <hr />
-            <br />
-
-
-
-            <br />
-            <br />
-            <Footer />
-        </div>
-    );
-*/

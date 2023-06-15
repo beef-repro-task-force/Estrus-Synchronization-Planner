@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
-//import { Button, List } from '@material-ui/core';
-//import Container from '@material-ui/core/Container';
-import { Button, List, Container } from "@mui/material";
+import React from 'react';
+import { Button, Container } from "@mui/material";
 import "../style/listView.css";
-//import { dateTimePickerDefaultProps } from '@material-ui/pickers/constants/prop-types';
 
 const ListView = props => {
     const { UserFlow, setUserFlow, ListOfInstrucitons, DateToStartBreeding, SynchronizationProtocol, GNRH, PG, SemenType} = props;
 
-    let stringVarContainer = "";
-    var convertStrBackToJson;
-    var changingTime = new Date();
     var selectedGNRH;
     var selectedPG;
     // text changes
@@ -74,7 +68,7 @@ const ListView = props => {
         }
     });
 
-    console.log(ListOfInstrucitons);
+    //console.log(ListOfInstrucitons);
 
     switch(true){
         case GNRH === "Cystorelin":
@@ -94,11 +88,12 @@ const ListView = props => {
             break;
         case GNRH === "GnRH":
             selectedGNRH = "(GnRH)";
+            break;
         default:
             break;
     }
 
-    console.log("the selected GNRH: " + selectedGNRH);
+    //console.log("the selected GNRH: " + selectedGNRH);
 
     switch(true){
         case PG === "Estrumate":
@@ -129,7 +124,7 @@ const ListView = props => {
             break;
     }
 
-    console.log("the selected PG: " + selectedPG);
+    //console.log("the selected PG: " + selectedPG);
 
     // fixing some timing issues
     const length = Object.keys(ListOfInstrucitons).length;
@@ -222,58 +217,13 @@ const ListView = props => {
         } // end of inner for loop
     } // end of main for loop
 
-    //switch case each protocol until i figure out how to do this shit
-    /*switch(SynchronizationProtocol){
-        case "1":
-            ListOfInstrucitons = [
-                {
-                    onDay: 0,
-                    step1: 'Start heat detection.',
-                    step2: semenTypeTxt
-                },
-                {
-                    onDay: 5,
-                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
-                    step2: semenTypeTxt,
-                    step3: '( no time constraint )'
-                },
-                {
-                    onDay: 8,
-                    step1: 'Continue heat detection',
-                    step2: semenTypeTxt
-                },
-                {
-                    onDay: 12,
-                    step1: 'Last clean up bulls',
-                    step2: semenTypeTxt,
-                    step3: '( no time constraint )'
-                },
-                {
-                    onDay: 26,
-                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
-                    step2: semenTypeTxt,
-                    step3: '( no time constraint )'
-                },
-                {
-                    onDay: 26,
-                    step1: 'Inject 5cc Lutalyse (PG) to all females not detected in heat.',
-                    step2: semenTypeTxt,
-                    step3: '( no time constraint )'
-                }             
-            ];
-            
-            break;
-        default:
-            break;
-    }*/
-
-    const leadingZeroesHours = (DateObject) =>{
+    /*const leadingZeroesHours = (DateObject) =>{
         return (DateObject.getHours() < 10 ? '0' : '') + DateObject.getHours();
     }
 
     const leadingZeroesMinutes = (DateObject) =>{
         return (DateObject.getMinutes() -3 < 10 ? '0' : '') + (DateObject.getMinutes() -3);
-    }
+    }*/
 
     return (
         <> 
