@@ -3012,7 +3012,7 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
-                        "step3": " <<estrus_detection_aid>>",
+                        "step3": "<<estrus_detection_aid>>",
                         "step4": "0.666666667"
                     },
                     {
