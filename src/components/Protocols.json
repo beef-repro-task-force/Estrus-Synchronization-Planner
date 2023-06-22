@@ -2112,7 +2112,8 @@
                     {
                         "OnDay": "-3",
                         "step1": "Inject 5cc Lutalyse (PG) in all females. ",
-                        "step2": "<<estrus_detection_aid>>"
+                        "step2": "<<estrus_detection_aid>>",
+                        "step3": "<<current_time>>"
                     },
                     {
                         "OnDay": "0",
@@ -2262,7 +2263,7 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Inject 2cc Cystorelin (GnRH) to all nonestrous females.",
+                        "step1": "<<nonestrous>>",
                         "step2": "<<ai_females_showing_estrus>>",
                         "step3": "Fixed Time AI between:",
                         "step4": "0.333333333",
@@ -3082,7 +3083,7 @@
                         "OnDay": "-3",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) to all females.",
-                        "step3": "<<estrus_detection_aid>>",
+                        "step3": "Apply estrus detection aid",
                         "step4": "-15hrs"
                     },
                     {
@@ -3701,11 +3702,11 @@
                         "step2":"( no time constraint )"
                     },
                     {
-                        "OnDay": "",
+                        "OnDay": "-2",
                         "step1": "Remove the CIDR device from each female.",
                         "step2": "Inject 5cc Lutalyse (PG) in all females at: ",
                         "step3": "",
-                        "step4": "0.583333333"
+                        "step4": "0.166666667"
                     },
                     {
                         "OnDay": "0",

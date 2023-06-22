@@ -24,7 +24,7 @@ const ListView = props => {
     mga_time_change.setDate(DateToStartBreeding.getDate() - 19);
     mga_time_change_2.setDate(DateToStartBreeding.getDate() - 11);
     mga_time_change_3.setDate(DateToStartBreeding.getDate() - 22);
-    //console.log(changingTime)
+    //console.log(DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }))
 
     //store if breed females AI 16-22....
     // G14 -> Semen Type
@@ -57,18 +57,17 @@ const ListView = props => {
             if(item[param] === "<<cidr_device>>") item[param] = cidr_device;
             if(item[param] === "<<estrus_detection_aid>>") item[param] = estrus_detection_aid;
             if(item[param] === "<<ai_females_showing_estrus>>") item[param] = ai_females_showing_estrus;
+            if(item[param] === "<<current_time>>") item[param] = DateToStartBreeding.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 
-            if(item[param] === "<<mga_time_change_3>>") item[param] = "Continue feeding until " + (mga_time_change_3.getMonth() + 1) + "/" + mga_time_change_3.getDay() + "/" + mga_time_change_3.getFullYear() + ".";
-            if(item[param] === "<<mga_time_change_2>>") item[param] = "Continue feeding until " + (mga_time_change_2.getMonth() + 1) + "/" + mga_time_change_2.getDay() + "/" + mga_time_change_2.getFullYear() + ".";
-            if(item[param] === "<<mga_time_change>>") item[param] = "Continue feeding until " + (mga_time_change.getMonth() + 1) + "/" + mga_time_change.getDay() + "/" + mga_time_change.getFullYear() + ".";
+            if(item[param] === "<<mga_time_change_3>>") item[param] = "Continue feeding until " + (mga_time_change_3.getMonth() + 1) + "/" + mga_time_change_3.getDate() + "/" + mga_time_change_3.getFullYear() + ".";
+            if(item[param] === "<<mga_time_change_2>>") item[param] = "Continue feeding until " + (mga_time_change_2.getMonth() + 1) + "/" + mga_time_change_2.getDate() + "/" + mga_time_change_2.getFullYear() + ".";
+            if(item[param] === "<<mga_time_change>>") item[param] = "Continue feeding until " + (mga_time_change.getMonth() + 1) + "/" + mga_time_change.getDate() + "/" + mga_time_change.getFullYear() + ".";
             
             /*if(SynchronizationProtocol === "8"){
                 if(item[param] === "<<protocol_8_time_change>>") item[param] = "Continue feeding until " + (changingTime.getMonth() + 1) + "/" + changingTime.getDay() + "/" + changingTime.getFullYear() + ".";
             }*/
         }
     });
-
-    //console.log(ListOfInstrucitons);
 
     switch(true){
         case GNRH === "Cystorelin":
