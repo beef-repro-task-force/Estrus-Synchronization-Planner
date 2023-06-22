@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Estrus-Synchronization-Planner/static/css/main.84320ded.css",
-    "main.js": "/Estrus-Synchronization-Planner/static/js/main.3fd1ec73.js",
+    "main.js": "/Estrus-Synchronization-Planner/static/js/main.53009c27.js",
     "static/js/787.c46962e3.chunk.js": "/Estrus-Synchronization-Planner/static/js/787.c46962e3.chunk.js",
     "static/media/brtf_full-color.png": "/Estrus-Synchronization-Planner/static/media/brtf_full-color.5e524e30b5813e9063c8.png",
     "index.html": "/Estrus-Synchronization-Planner/index.html",
     "main.84320ded.css.map": "/Estrus-Synchronization-Planner/static/css/main.84320ded.css.map",
-    "main.3fd1ec73.js.map": "/Estrus-Synchronization-Planner/static/js/main.3fd1ec73.js.map",
+    "main.53009c27.js.map": "/Estrus-Synchronization-Planner/static/js/main.53009c27.js.map",
     "787.c46962e3.chunk.js.map": "/Estrus-Synchronization-Planner/static/js/787.c46962e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84320ded.css",
-    "static/js/main.3fd1ec73.js"
+    "static/js/main.53009c27.js"
   ]
 }
