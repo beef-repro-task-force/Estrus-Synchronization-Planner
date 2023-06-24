@@ -18,26 +18,9 @@ const ProtocolInstructions = props => {
 
     //Variable to determine what page we are on
     const [CalendarOrListView, setCalendarOrListView ] = useState(0)
-
-    //List of instructions for this protocol 
-    //example protocol 38 has 5 set of instructions for 5 different days 
-    //these sets are broken down into steps 1 ... 4 
-        //Add expected birth date to list of instructions
-    //let ListOfInstrucitons = [...PInstructions.Protocols[0][SynchronizationProtocol.toString].instructions ,  {"OnDay" : GestationPeriod.toString(), "step1" : "Expected Birth Date" }];     
-    let ListOfInstrucitons = PInstructions.Protocols[0][SynchronizationProtocol].instructions;
     
-    //Add bull turn in day
-    /*let BullTurnInDict = {"OnDay" : BullTurnIn.toString() , "step1" : "Bull Turn In Begins " }
-
-        //Find where to place Bull Turn In Date in the list of events within protocol
-        let TempIndex = 0;
-        for(let i = 0; i < ListOfInstrucitons.length; i++){
-            if(BullTurnIn < parseInt(ListOfInstrucitons[i].OnDay)){
-                TempIndex = i ;
-                break;
-            }
-        }
-        ListOfInstrucitons.splice(TempIndex, 0, BullTurnInDict)*/
+    let ListOfInstrucitons = PInstructions.Protocols[0][SynchronizationProtocol].instructions;
+    let ListOfCalendarInstruction = PInstructions.Protocols[0][SynchronizationProtocol].calendar;
 
     //Create then download the iCalendar file
     const downloadICS = () =>{
@@ -52,8 +35,6 @@ const ProtocolInstructions = props => {
             let eventDictionary = {}
             let ProtocolEventDate = new Date(DateToStartBreeding);
             ProtocolEventDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay));
-
-            //let eachDayTitle;
 
             //ics.createEvents api arguements found https://www.npmjs.com/package/ics
             eventDictionary["title"] = instruction.step1;
@@ -129,13 +110,14 @@ const ProtocolInstructions = props => {
             />
             : 
             <CalendarView
-                ListOfInstrucitons = {ListOfInstrucitons}
+                ListOfCalendarInstruction = {ListOfCalendarInstruction}
                 DateToStartBreeding={DateToStartBreeding}
                 SynchronizationProtocol = {SynchronizationProtocol}
                 GNRH={GNRH} 
                 PG={PG} 
                 BullTurnIn={BullTurnIn} 
                 GestationPeriod={GestationPeriod}
+                SemenType={SemenType}
             />
         }
         </>

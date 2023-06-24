@@ -42,9 +42,11 @@
     "Protocols": [
         {
             "0": {
+                "Id":0,
                 "SynchronizationSystemTitle": "Select a Protocol"
             },
             "1": {
+                "Id": 1,
                 "SynchronizationSystemTitle": "1 Injection Prostaglandin (prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": 0.75,
                 "NumberOfGnRHShotsPerFemale": 0,
@@ -81,6 +83,32 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": 0,
+                        "step1": "Start heat detection."
+                    },
+                    {
+                        "OnDay": 5,
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred"
+                    },
+                    {
+                        "OnDay": 8,
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": 12,
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": 26,
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": 26,
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": 0,
@@ -115,6 +143,7 @@
                 ]
             },
             "2": {
+                "Id":2,
                 "SynchronizationSystemTitle": "1 Injection Prostaglandin (no prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": "0.97",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -151,6 +180,28 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "0",
@@ -182,6 +233,7 @@
                 ]
             },
             "3": {
+                "Id": 3,
                 "SynchronizationSystemTitle": "2 Injection Prostaglandin (no prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": "2",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -218,6 +270,36 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-14",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-14",
@@ -293,6 +375,32 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat"
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat/bred"
+                    },
+                    {
+                        "OnDay": "10",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "24",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "0",
@@ -367,6 +475,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-31",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-18",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-16",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "Turn clean up bulls in with females."
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-31",
@@ -451,6 +597,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-32",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "6",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "20",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-32",
@@ -535,6 +719,36 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-6",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "Start heat detection."
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "*Inject 5cc Lutalyse to females not in heat/bred"
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "7",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "22",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-6",
@@ -612,6 +826,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-32",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*Turn in Bull Power"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-32",
@@ -698,6 +950,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-32",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*Turn in Bull Power"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-32",
@@ -785,6 +1075,28 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-9",
@@ -851,6 +1163,28 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-9",
@@ -918,6 +1252,45 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-17",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-11",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "Last day of heat detection.",
+                        "step2": "<<ai_after_standing_heat>>"
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-17",
@@ -1006,6 +1379,32 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-1",
+                        "step1": "*Inject 2cc Cystorelin to all females (48 hrs following PG)"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-10",
@@ -1076,6 +1475,38 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females."
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "6",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "20",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-7",
@@ -1154,6 +1585,37 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Insert CIDR device in all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "6",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "20",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-7",
@@ -1231,6 +1693,38 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-7",
@@ -1309,6 +1803,40 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-35",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-22",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-20",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & AI"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-35",
@@ -1388,6 +1916,40 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-23",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "-8",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-6",
+                        "step1": "*Inject 2cc Cystorelin  - all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-23",
@@ -1467,6 +2029,36 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-6",
+                        "step1": "*Inject 2cc Cystorelin  - all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "Start heat detection."
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "*Inject 5cc Lutalyse to females not in heat/bred"
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "4",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI "
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "22",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-6",
@@ -1545,6 +2137,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-17",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-11",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-17",
@@ -1634,6 +2264,35 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-5",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "Start heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "5",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "23",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-5",
@@ -1711,6 +2370,30 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "3",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-10",
@@ -1781,6 +2464,30 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-9",
@@ -1851,6 +2558,38 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin - all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-7",
@@ -1931,6 +2670,37 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-7",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI "
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-7",
@@ -2009,6 +2779,44 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-32",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Continue heat detection."
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Peak Estrus"
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-32",
@@ -2095,6 +2903,35 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-35"
+                    },
+                    {
+                        "OnDay": "-22"
+                    },
+                    {
+                        "OnDay": "-20",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "Inject 5cc Lutalyse (PG) in all females. ",
+                        "step2": "<<implementEda>>"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin (GnRH) & Fixed Time AI",
+                        "step2": "<<useSexedSemen>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-35",
@@ -2171,6 +3008,36 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-33",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "*Remove CIDRs"
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power "
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-33",
@@ -2247,6 +3114,30 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-8",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin  - all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDR & Inject 5cc Lutalyse & ",
+                        "step2": "*Inject another 5cc Lutalyse  - all females 8 hrs +/-2 after 1st injection"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-8",
@@ -2317,6 +3208,32 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-30",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "-16",
+                        "step1": "*Remove CIDRs"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "6",
+                        "step1": "Last day of heat detection."
+                    },
+                    {
+                        "OnDay": "20",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-30",
@@ -2388,6 +3305,32 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-30",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "-16",
+                        "step1": "*Remove CIDRs"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "17",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "21",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-30",
@@ -2461,6 +3404,32 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-33",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "*Remove CIDRs"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-33",
@@ -2534,6 +3503,45 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "6",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Heat detection"
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "Heat detection"
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Insert CIDR & Inject 2cc Cystorelin in nonbred females "
+                    },
+                    {
+                        "OnDay": "9",
+                        "step1": "*Remove CIDRS & ",
+                        "step2": "*Inject 5cc Lutalyse  in nonbred females "
+                    },
+                    {
+                        "OnDay": "10",
+                        "step1": "* Detect Estrus & Breed"
+                    },
+                    {
+                        "OnDay": "11",
+                        "step1": "* Detect Estrus & Breed"
+                    },
+                    {
+                        "OnDay": "12",
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                    },
+                    {
+                        "OnDay": "26",
+                        "step1": "*Turn in Bull Power"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "0",
@@ -2625,6 +3633,45 @@
                 "DateOfAIAdjustments": "",
                 "HourToleranceAdjustments": "",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "Heat detection"
+                    },
+                    {
+                        "OnDay": "2",
+                        "step1": "*Insert CIDR & Inject 2cc Cystorelin in nonbred females "
+                    },
+                    {
+                        "OnDay": "3",
+                        "step1": "*Remove CIDRS & ",
+                        "step2": "*Inject 5cc Lutalyse in nonbred females "
+                    },
+                    {
+                        "OnDay": "9",
+                        "step1": "* Detect Estrus & Breed"
+                    },
+                    {
+                        "OnDay": "10",
+                        "step1": "* Detect Estrus & Breed"
+                    },
+                    {
+                        "OnDay": "12",
+                        "step1": "* Detect Estrus & Breed"
+                    },
+                    {
+                        "OnDay": "26",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "30",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "0",
@@ -2713,6 +3760,33 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "3",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-12",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Insert CIDR & Inject 2cc Cystorelin in nonbred females "
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRS &",
+                        "step2": "*Inject 5cc Lutalyse in nonbred females "
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-12",
@@ -2786,6 +3860,33 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-12",
+                        "step1": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Insert CIDR & Inject 2cc Cystorelin in nonbred females "
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRS &",
+                        "step2": "*Inject 5cc Lutalyse in nonbred females "
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-12",
@@ -2859,6 +3960,30 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-8",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRS &",
+                        "step2": "*Inject 5cc Lutalyse- all females"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-8",
@@ -2927,6 +4052,30 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "4",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-8",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDR & Inject 5cc Lutalyse- all females",
+                        "step2": "*Inject another 5cc Lutalyse  - all females 8 hrs +/- 2 after 1st injection"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI)"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-8",
@@ -2997,6 +4146,34 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRS &",
+                        "step2": "*Inject 5cc Lutalyse -all females "
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-17",
@@ -3072,6 +4249,36 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Insert CIDR device &",
+                        "step2": "  *Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRs &",
+                        "step2": "*Inject 5cc Lutalyse -all females",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen3>>",
+                        "step2": "<<aiFemales>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-10",
@@ -3149,6 +4356,36 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-9",
+                        "step1": "*Insert CIDR device &",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Remove CIDRs &",
+                        "step2": "*Inject 5cc Lutalyse -all females",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen>>",
+                        "step2": "<<useSexedSemen3>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "19",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-9",
@@ -3226,6 +4463,32 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRs & ",
+                        "step2": "*Inject 5cc Lutalyse -all females & ",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI",
+                        "step2": "  *Use sexed semen only on females showing estrus"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-10",
@@ -3296,6 +4559,36 @@
                 "DateOfAIAdjustments": "06-01-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": " *Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRs &  ",
+                        "step2": "*Inject 5cc Lutalyse -all females &  ",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI",
+                        "step2": "<<useSexedSemen>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-17",
@@ -3371,6 +4664,36 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Insert CIDR device &",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDRs &",
+                        "step2": "*Inject 5cc Lutalyse -all females",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen3>>",
+                        "step2": "*Inject 2cc Cystorelin (GnRH) & AI nonestrous females with conventional semen"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-10",
@@ -3448,6 +4771,38 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-33",
+                        "step1": "*Insert CIDR device -all females "
+                    },
+                    {
+                        "OnDay": "-19",
+                        "step1": "*Remove CIDRs"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen3>>",
+                        "step2": "<<aiFemales>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-33",
@@ -3528,6 +4883,36 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-8",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Remove CIDR & Inject 5cc Lutalyse- all females",
+                        "step2": "*Inject another 5cc Lutalyse  - all females 8 hrs +/-2 after 1st injection",
+                        "step3": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen3>>",
+                        "step2": "<<aiFemales>>"
+                    },
+                    {
+                        "OnDay": "15",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-8",
@@ -3605,6 +4990,43 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-35",
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-22",
+                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                    },
+                    {
+                        "OnDay": "-20",
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                    },
+                    {
+                        "OnDay": "-3",
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "*Implement EDA"
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "<<useSexedSemen2>>",
+                        "step3": "<<useSexedSemen>>"
+                    },
+                    {
+                        "OnDay": "1",
+                        "step1": "<<useSexedSemen3>>",
+                        "step2": "<<aiFemales>>"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "T*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-35",
@@ -3688,6 +5110,34 @@
                 "DateOfAIAdjustments": "06-02-21",
                 "HourToleranceAdjustments": "2",
                 "LastPGInjectionDate": "",
+                "calendar":[
+                    {
+                        "OnDay": "-17",
+                        "step1": "*Insert CIDR device & ",
+                        "step2": "*Inject 5cc Lutalyse -all females"
+                    },
+                    {
+                        "OnDay": "-10",
+                        "step1": "*Inject 2cc Cystorelin -all females"
+                    },
+                    {
+                        "OnDay": "-2",
+                        "step1": "*Remove CIDRS &",
+                        "step2": "*Inject 5cc Lutalyse -all females "
+                    },
+                    {
+                        "OnDay": "0",
+                        "step1": "*Inject 5cc Lutalyse & Fixed Time AI"
+                    },
+                    {
+                        "OnDay": "14",
+                        "step1": "*Turn in Bull Power"
+                    },
+                    {
+                        "OnDay": "18",
+                        "step1": "*21 Days since last PG"
+                    }
+                ],
                 "instructions": [
                     {
                         "OnDay": "-17",
