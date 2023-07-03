@@ -42,11 +42,11 @@
     "Protocols": [
         {
             "0": {
-                "Id":0,
+                "id":0,
                 "SynchronizationSystemTitle": "Select a Protocol"
             },
             "1": {
-                "Id": 1,
+                "id": 1,
                 "SynchronizationSystemTitle": "1 Injection Prostaglandin (prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": 0.75,
                 "NumberOfGnRHShotsPerFemale": 0,
@@ -86,27 +86,33 @@
                 "calendar":[
                     {
                         "OnDay": 0,
-                        "step1": "Start heat detection."
+                        "step1": "Start heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": 5,
-                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred"
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": 8,
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": 12,
-                        "step1": "Last day of heat detection."
+                        "step1": "Last day of heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": 26,
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": 26,
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -143,7 +149,7 @@
                 ]
             },
             "2": {
-                "Id":2,
+                "id":2,
                 "SynchronizationSystemTitle": "1 Injection Prostaglandin (no prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": "0.97",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -183,23 +189,28 @@
                 "calendar":[
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred"
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat & bred",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "5",
-                        "step1": "Last day of heat detection."
+                        "step1": "Last day of heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "19",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -233,7 +244,7 @@
                 ]
             },
             "3": {
-                "Id": 3,
+                "id": 3,
                 "SynchronizationSystemTitle": "2 Injection Prostaglandin (no prior estrus detection)",
                 "NumberOfPGFShotsPerFemale": "2",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -273,15 +284,18 @@
                 "calendar":[
                     {
                         "OnDay": "-14",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -339,6 +353,7 @@
                 ]
             },
             "4": {
+                "id": 4,
                 "SynchronizationSystemTitle": "1 Injection with 2nd Injection to Non-Responders",
                 "NumberOfPGFShotsPerFemale": "1.17",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -378,19 +393,23 @@
                 "calendar":[
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse to females not already in heat"
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "2",
-                        "step1": "*Peak Estrus"
+                        "step1": "*Peak Estrus",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "5",
-                        "step1": "*Inject 5cc Lutalyse to females not already in heat/bred"
+                        "step1": "*Inject 5cc Lutalyse to females not already in heat/bred",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "10",
-                        "step1": "Last day of heat detection."
+                        "step1": "Last day of heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "24",
@@ -439,6 +458,7 @@
                 ]
             },
             "5": {
+                "id": 5,
                 "SynchronizationSystemTitle": "MGA + Prostaglandin (17 day between)",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -478,7 +498,8 @@
                 "calendar":[
                     {
                         "OnDay": "-31",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-18",
@@ -490,11 +511,13 @@
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -561,6 +584,7 @@
                 ]
             },
             "6": {
+                "id":6,
                 "SynchronizationSystemTitle": "MGA + Prostaglandin",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "0",
@@ -600,23 +624,28 @@
                 "calendar":[
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-19",
-                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                        "step1": "Last day to feed MGA at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-17",
-                        "step1": "*Many females in heat next 4 days. DO NOT BREED!"
+                        "step1": "*Many females in heat next 4 days. DO NOT BREED!",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -683,6 +712,7 @@
                 ]
             },
             "7": {
+                "id": 7,
                 "SynchronizationSystemTitle": "Select Synch",
                 "NumberOfPGFShotsPerFemale": "0.93",
                 "NumberOfGnRHShotsPerFemale": "1",
@@ -722,31 +752,38 @@
                 "calendar":[
                     {
                         "OnDay": "-6",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "Start heat detection."
+                        "step1": "Start heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "*Inject 5cc Lutalyse to females not in heat/bred"
+                        "step1": "*Inject 5cc Lutalyse to females not in heat/bred",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "3",
-                        "step1": "*Peak Estrus"
+                        "step1": "*Peak Estrus",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "7",
-                        "step1": "Last day of heat detection."
+                        "step1": "Last day of heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "22",
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -790,6 +827,7 @@
                 ]
             },
             "8": {
+                "id": 8,
                 "SynchronizationSystemTitle": "MGA Select",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "1",
@@ -829,11 +867,13 @@
                 "calendar":[
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-19",
-                        "step1": "Last day to feed MGA at .5 mg/hd/day."
+                        "step1": "Last day to feed MGA at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-17",
@@ -841,15 +881,18 @@
                     },
                     {
                         "OnDay": "-7",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -914,6 +957,7 @@
                 ]
             },
             "9": {
+                "id": 9,
                 "SynchronizationSystemTitle": "MGA Select with E-AI and Cleanup AI",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "1.35",
@@ -953,7 +997,8 @@
                 "calendar":[
                     {
                         "OnDay": "-32",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-19",
@@ -965,15 +1010,18 @@
                     },
                     {
                         "OnDay": "-7",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -981,11 +1029,13 @@
                     },
                     {
                         "OnDay": "3",
-                        "step1": "*Inject 2cc Cystorelin & Clean-up AI"
+                        "step1": "*Inject 2cc Cystorelin & Clean-up AI",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -1039,6 +1089,7 @@
                 ]
             },
             "10": {
+                "id": 10,
                 "SynchronizationSystemTitle": "CO-Synch with Fixed-Time AI 48 +/-2",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "2",
@@ -1078,23 +1129,28 @@
                 "calendar":[
                     {
                         "OnDay": "-9",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "-2",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI ",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "14",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -1127,6 +1183,7 @@
                 ]
             },
             "11": {
+                "id": 11,
                 "SynchronizationSystemTitle": "Co Synch - (GnRH + PGF2a + GnRH 48 hr calf removal)",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "2",
@@ -1166,23 +1223,28 @@
                 "calendar":[
                     {
                         "OnDay": "-9",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "-2",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI "
+                        "step1": "*Inject 2cc Cystorelin & Fixed Time AI ",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "14",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [
@@ -1216,6 +1278,7 @@
                 ]
             },
             "12": {
+                "id": 12,
                 "SynchronizationSystemTitle": "7-11 Synch",
                 "NumberOfPGFShotsPerFemale": "2",
                 "NumberOfGnRHShotsPerFemale": "1",
@@ -1255,23 +1318,28 @@
                 "calendar":[
                     {
                         "OnDay": "-17",
-                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day."
+                        "step1": "Start feeding Melengestrol Acetate (MGA) at .5 mg/hd/day.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "-11",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "-7",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "( no time constraint )"
                     },
                     {
                         "OnDay": "1",
-                        "step1": "Continue heat detection."
+                        "step1": "Continue heat detection.",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "2",
@@ -1343,6 +1411,7 @@
                 ]
             },
             "13": {
+                "id": 13,
                 "SynchronizationSystemTitle": "OvSynch",
                 "NumberOfPGFShotsPerFemale": "1",
                 "NumberOfGnRHShotsPerFemale": "2",
@@ -1382,27 +1451,33 @@
                 "calendar":[
                     {
                         "OnDay": "-10",
-                        "step1": "*Inject 2cc Cystorelin -all females"
+                        "step1": "*Inject 2cc Cystorelin -all females",
+                        "step2": "<<plusSixTime>>"
                     },
                     {
                         "OnDay": "-3",
-                        "step1": "*Inject 5cc Lutalyse- all females"
+                        "step1": "*Inject 5cc Lutalyse- all females",
+                        "step2": "<<plusSixTime>>"
                     },
                     {
                         "OnDay": "-1",
-                        "step1": "*Inject 2cc Cystorelin to all females (48 hrs following PG)"
+                        "step1": "*Inject 2cc Cystorelin to all females (48 hrs following PG)",
+                        "step2": "<<plusSixTime>>"
                     },
                     {
                         "OnDay": "0",
-                        "step1": "*Fixed Time AI "
+                        "step1": "*Fixed Time AI ",
+                        "step2": "<<selectedTime>>"
                     },
                     {
                         "OnDay": "14",
-                        "step1": "*Turn in Bull Power"
+                        "step1": "*Turn in Bull Power",
+                        "step2": "+"
                     },
                     {
                         "OnDay": "21",
-                        "step1": "*21 Days since last PG"
+                        "step1": "*21 Days since last PG",
+                        "step2": "+"
                     }
                 ],
                 "instructions": [

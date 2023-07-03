@@ -13,6 +13,8 @@ const CalendarView = props => {
     let useSexedSemen2 = "";
     let useSexedSemen3  = "";
     let aiFemales = "";
+    let plusSixTime = DateToStartBreeding;
+    plusSixTime = plusSixTime.setHours(plusSixTime.getHours() + 6);
 
     if(SemenType === "Conventional & Sexed"){
         implementEda = "& Implement EDA"
@@ -36,6 +38,8 @@ const CalendarView = props => {
             if(item[param] === "<<useSexedSemen2>>") item[param] = useSexedSemen2;
             if(item[param] === "<<useSexedSemen3>>") item[param] = useSexedSemen3;
             if(item[param] === "<<aiFemales>>") item[param] = aiFemales;
+            if(item[param] === "<<selectedTime>>") item[param] = DateToStartBreeding;
+            if(item[param] === "<<plusSixTime>>") item[param] = plusSixTime.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
             
             /*if(SynchronizationProtocol === "8"){
                 if(item[param] === "<<protocol_8_time_change>>") item[param] = "Continue feeding until " + (changingTime.getMonth() + 1) + "/" + changingTime.getDay() + "/" + changingTime.getFullYear() + ".";
@@ -54,11 +58,14 @@ const CalendarView = props => {
         if(instruction.step3 !== undefined) eventBody += instruction.step3
         if(instruction.step4 !== undefined) eventBody += instruction.step4
 
-        return({
-            "title": `${instruction.step1} ${instruction.step2} ${instruction.step3} ${instruction.step4}`,
-            "title": `${instruction.step1} ${instruction.step2} ${instruction.step3} ${instruction.step4}`,
-            "start": `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1).toString().padStart(2, '0')}-${tempDate.getDate().toString().padStart(2, '0')}`
-        })
+        return(
+            {
+                "title": eventBody,
+                "display": "auto",
+                "start": `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1).toString().padStart(2, '0')}-${tempDate.getDate().toString().padStart(2, '0')}`
+            }
+        
+        )
     })]
 
 
