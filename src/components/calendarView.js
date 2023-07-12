@@ -47,29 +47,24 @@ const CalendarView = props => {
         }
     });
 
-    console.log(ListOfCalendarInstruction);
-    
-    let ListOfInstructionsCalendarFormat = [...ListOfCalendarInstruction.map(instruction => {
+    let calEventArr = [];
+
+    ListOfCalendarInstruction.forEach((instruction)=>{
         let tempDate = new Date(DateToStartBreeding)
         tempDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay))
-        let eventBody = "";
-        if(instruction.step1 !== undefined) eventBody += instruction.step1
-        if(instruction.step2 !== undefined) eventBody += instruction.step2
-        if(instruction.step3 !== undefined) eventBody += instruction.step3
-        if(instruction.step4 !== undefined) eventBody += instruction.step4
-
-        return(
-            {
-                "title": eventBody,
-                "display": "auto",
-                "start": `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1).toString().padStart(2, '0')}-${tempDate.getDate().toString().padStart(2, '0')}`
+        for (let item in instruction) {
+            console.log(item)
+            if(item !== "OnDay"){
+                let newItemObj = {
+                    "title": instruction[item],
+                    "display": "auto",
+                    "start": `${tempDate.getFullYear()}-${(tempDate.getMonth() + 1).toString().padStart(2, '0')}-${tempDate.getDate().toString().padStart(2, '0')}`
+                }
+                calEventArr.push(newItemObj)
             }
-        
-        )
-    })]
+        }
+    })
 
-
-    console.log({ListOfInstructionsCalendarFormat})
     return (
         <div className='calendar-container'>
             <h2>Protocol #{SynchronizationProtocol}</h2>
@@ -87,7 +82,7 @@ const CalendarView = props => {
                         //editable      = { false }
                         //initialEvents = { ListOfInstructionsCalendarFormat }
                         //eventContent  = { ListOfInstructionsCalendarFormat }
-                        events        = { ListOfInstructionsCalendarFormat }
+                        events        = { calEventArr }
                         height        = { "auto" }
                         aspectRatio   = { 1 }
                         //style         = { {} }
