@@ -8,6 +8,7 @@ import '../style/calendarView.css';
 const CalendarView = props => {
     const { ListOfCalendarInstruction, DateToStartBreeding, SynchronizationProtocol, SemenType } = props;
 
+    let timeTmp = DateToStartBreeding;
     let implementEda = "";
     let useSexedSemen = "";
     let useSexedSemen2 = "";
@@ -50,10 +51,9 @@ const CalendarView = props => {
     let calEventArr = [];
 
     ListOfCalendarInstruction.forEach((instruction)=>{
-        let tempDate = new Date(DateToStartBreeding)
-        tempDate.setDate(DateToStartBreeding.getDate() + parseInt(instruction.OnDay))
+        let tempDate = new Date(timeTmp)
+        tempDate.setDate(timeTmp.getDate() + parseInt(instruction.OnDay))
         for (let item in instruction) {
-            console.log(item)
             if(item !== "OnDay"){
                 let newItemObj = {
                     "title": instruction[item],
@@ -65,6 +65,9 @@ const CalendarView = props => {
         }
     })
 
+    console.log(DateToStartBreeding)
+    calEventArr.reverse();
+
     return (
         <div className='calendar-container'>
             <h2>Protocol #{SynchronizationProtocol}</h2>
@@ -72,16 +75,15 @@ const CalendarView = props => {
             <div>
                     <FullCalendar   
                         plugins             = { [ dayGridPlugin ] }
-                        //schedulerLicenseKey = { 'GPL-My-Project-Is-Open-Source' } 
                         initialView         = "dayGridMonth"
                         headerToolbar       = { {
                                                     left:   'prev',
                                                     center: 'title',
                                                     right:  'next'
                                                 } }
-                        //editable      = { false }
-                        //initialEvents = { ListOfInstructionsCalendarFormat }
-                        //eventContent  = { ListOfInstructionsCalendarFormat }
+                        //editable      = { true }
+                        // initialEvents = { ListOfInstructionsCalendarFormat }
+                        //eventContent  = { calEventArr }
                         events        = { calEventArr }
                         height        = { "auto" }
                         aspectRatio   = { 1 }

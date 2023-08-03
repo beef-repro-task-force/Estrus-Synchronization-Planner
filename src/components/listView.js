@@ -224,6 +224,8 @@ const ListView = props => {
         return (DateObject.getMinutes() -3 < 10 ? '0' : '') + (DateObject.getMinutes() -3);
     }*/
 
+    console.log(DateToStartBreeding)
+
     return (
         <> 
 

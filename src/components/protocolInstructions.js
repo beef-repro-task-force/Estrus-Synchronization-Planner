@@ -56,6 +56,8 @@ const ProtocolInstructions = props => {
         var file = new File([value], "EstrusScheduleDownload.ics", {type: "text/plain;charset=utf-8"});
         FileSaver.saveAs(file);
     }
+    
+    console.log(DateToStartBreeding)
 
     return (
         <>
