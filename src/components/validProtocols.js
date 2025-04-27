@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useMemo } from "react";
 import { Button, ButtonGroup } from "@mui/material";
 import ProtocolData from "./Protocols.json";
 
@@ -25,12 +25,11 @@ const ValidProtocols = (props) => {
   var SynchProtocolTitleData = ProtocolData.Protocols[0];
   let selectedProtocolHeader = "";
 
-  // object variable to hold the user's inputs and compare it to the rules
-  const factInput = {
+  const factInput = useMemo(() => ({
     BreedType: BreedType,
     SemenType: SemenType,
     SystemType: SystemType,
-  };
+  }), [BreedType, SemenType, SystemType]);
 
   switch (SystemType) {
     case "Estrus AI":
@@ -75,7 +74,7 @@ const ValidProtocols = (props) => {
     };
 
     fetchData1().catch(console.error);
-  }, []);
+  }, [CowOrHeifer, Engine, engineRules, factInput, setPreferList]);
 
   // this is for the less preferr systems
   useEffect(() => {
@@ -105,7 +104,7 @@ const ValidProtocols = (props) => {
     };
 
     fetchData1().catch(console.error);
-  }, []);
+  }, [CowOrHeifer, Engine, engineRules, factInput, setLessPreferList]);
 
   return (
     <div className="protocol-div-container">
@@ -135,6 +134,8 @@ const ValidProtocols = (props) => {
                   {SynchProtocolTitleData[item].SynchronizationSystemTitle}
                 </Button>
               );
+            } else {
+              return null;
             }
           })}
         </ButtonGroup>
@@ -159,6 +160,8 @@ const ValidProtocols = (props) => {
                   {SynchProtocolTitleData[item].SynchronizationSystemTitle}
                 </Button>
               );
+            } else {
+              return null;
             }
           })}
         </ButtonGroup>
