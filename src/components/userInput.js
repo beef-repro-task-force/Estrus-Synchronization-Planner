@@ -263,6 +263,7 @@ const UserInput = (props) => {
         }}
         variant="outlined"
         size="large"
+        style={{ marginBottom: 40 }}
         className="custom-btn-styling-stuff"
       >
         Submit
