@@ -14,13 +14,22 @@ function Navbar() {
           Beef Reproduction Task Force
         </Typography>
         <Grid container justifyContent="flex-end">
-          <IconButton href="https://www.facebook.com/beefrepro/">
+          <IconButton
+            href="https://www.facebook.com/beefrepro/"
+            aria-label="Facebook"
+          >
             <FacebookIcon />
           </IconButton>
-          <IconButton href="https://twitter.com/beef_repro">
+          <IconButton
+            href="https://twitter.com/beef_repro"
+            aria-label="Twitter"
+          >
             <TwitterIcon />
           </IconButton>
-          <IconButton href="https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber">
+          <IconButton
+            href="https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber"
+            aria-label="YouTube"
+          >
             <YoutubeIcon />
           </IconButton>
         </Grid>

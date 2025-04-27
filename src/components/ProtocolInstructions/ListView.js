@@ -13,7 +13,7 @@ const ListView = (props) => {
     PG,
     SemenType,
   } = props;
-  console.log("ListView Props", props);
+
   var selectedGNRH;
   var selectedPG;
   // text changes

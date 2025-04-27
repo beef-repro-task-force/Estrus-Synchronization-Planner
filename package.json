@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
     "@date-io/date-fns": "2.15.0",
     "@date-io/dayjs": "2.16.0",
     "@emotion/react": "11.10.4",
@@ -15,9 +17,10 @@
     "@mui/material": "5.10.5",
     "@mui/x-data-grid": "5.17.14",
     "@mui/x-date-pickers": "5.0.16",
-    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
+    "babel-jest": "^29.7.0",
     "date-fns": "2.29.3",
     "dayjs": "^1.11.13",
     "file-saver": "2.0.5",
@@ -59,6 +62,7 @@
   },
   "devDependencies": {
     "gh-pages": "4.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "27.5.1"
   }
 }

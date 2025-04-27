@@ -8,7 +8,7 @@ import "../../style/footer.css";
 
 function Footer() {
   return (
-    <Box sx={{ bgcolor: "#A23A41", color: "grey.700" }}>
+    <Box sx={{ bgcolor: "#A23A41", color: "grey.700" }} role="contentinfo">
       <Container maxWidth="md" sx={{ py: 1 }}>
         <br />
 
@@ -53,13 +53,20 @@ function Footer() {
           <IconButton
             href="https://www.facebook.com/beefrepro/"
             className="icon-btn-links"
+            aria-label="Facebook"
           >
             <FacebookIcon />
           </IconButton>
-          <IconButton href="https://twitter.com/beef_repro">
+          <IconButton
+            href="https://twitter.com/beef_repro"
+            aria-label="Twitter"
+          >
             <TwitterIcon />
           </IconButton>
-          <IconButton href="https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber">
+          <IconButton
+            href="https://www.youtube.com/channel/UCLpZWNMIXm83qfMU-kqu_uA?view_as=subscriber"
+            aria-label="YouTube"
+          >
             <YoutubeIcon />
           </IconButton>
         </Grid>

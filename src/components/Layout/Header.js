@@ -5,7 +5,7 @@ import "../../style/header.css";
 
 function Header() {
   return (
-    <div className="logo-header" style={{ backgroundColor: "#eeeeee" }}>
+    <div className="logo-header" style={{ backgroundColor: "#eeeeee" }} role="banner">
       <Link to="/">
         <img src={cow} alt="moo" />
       </Link>

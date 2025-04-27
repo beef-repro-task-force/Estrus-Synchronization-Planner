@@ -76,8 +76,6 @@ const ProtocolInstructions = (props) => {
     FileSaver.saveAs(file);
   };
 
-  console.log("CalendarOrListView", CalendarOrListView);
-
   return (
     <>
       <br />

@@ -72,7 +72,7 @@ function Home() {
             parameters={parameters}
           />
         ) : (
-          <center style={{ margin: 40 }}>
+          <center style={{ margin: 40 }} data-testid="loading-spinner">
             <CircularProgress />
           </center>
         )}

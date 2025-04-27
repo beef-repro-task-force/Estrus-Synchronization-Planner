@@ -13,7 +13,6 @@ const CalendarView = (props) => {
     SemenType,
   } = props;
 
-  console.log("CalendarView Props", props);
 
   let timeTmp = DateToStartBreeding;
   // text changes
