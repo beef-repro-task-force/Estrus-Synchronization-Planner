@@ -133,7 +133,6 @@ const CalendarView = (props) => {
     }
   });
 
-  console.log(DateToStartBreeding);
   calEventArr.reverse();
 
   return (

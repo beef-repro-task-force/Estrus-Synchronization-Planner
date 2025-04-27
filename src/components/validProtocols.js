@@ -1,6 +1,6 @@
 import { React, useEffect } from "react";
 import { Button, ButtonGroup } from "@mui/material";
-import ProtocolData from "../components/Protocols.json";
+import ProtocolData from "./Protocols.json";
 
 import "../style/validProtocols.css";
 
@@ -21,7 +21,7 @@ const ValidProtocols = (props) => {
 
   // create a rules engine and grab the rules
   const { Engine } = require("json-rules-engine");
-  const engineRules = require("../components/test-rules.json");
+  const engineRules = require("./test-rules.json");
   var SynchProtocolTitleData = ProtocolData.Protocols[0];
   let selectedProtocolHeader = "";
 
