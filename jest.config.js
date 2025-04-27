@@ -3,7 +3,7 @@ module.exports = {
     '^.+\\.(js|jsx)$': 'babel-jest',
   },
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['@testing-library/jest-dom'],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
   transformIgnorePatterns: [
     '/node_modules/(?!(@mui|@babel|@emotion)/)',
   ],
