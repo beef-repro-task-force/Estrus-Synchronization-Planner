@@ -10,10 +10,13 @@ import {
 import { DateTimePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import swal from "sweetalert";
+import dayjs from "dayjs";
+import utc from 'dayjs/plugin/utc';
 
 import ProtocolData from "../components/Protocols.json";
 
 import "../style/userInput.css";
+dayjs.extend(utc);
 
 const UserInput = (props) => {
   const {
@@ -62,6 +65,10 @@ const UserInput = (props) => {
     } else {
       setUserFlow(UserFlow + 1);
     }
+  };
+
+  const dateToStartBreedingChanged = (value) => {
+    setDateToStartBreeding(dayjs(value));
   };
 
   return (
@@ -171,7 +178,7 @@ const UserInput = (props) => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DateTimePicker
           value={DateToStartBreeding}
-          onChange={(value) => setDateToStartBreeding(new Date(value))}
+          onChange={dateToStartBreedingChanged}
           renderInput={(params) => <TextField {...params} />}
           format="MM/dd/yyyy hh:mm aa"
         />

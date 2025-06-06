@@ -43,20 +43,18 @@ const ProtocolInstructions = (props) => {
         (instruction.step4 === undefined ? "" : instruction.step4);
 
       let eventDictionary = {};
-      let ProtocolEventDate = new Date(DateToStartBreeding);
-      ProtocolEventDate.setDate(
-        DateToStartBreeding.getDate() + parseInt(instruction.OnDay)
-      );
+      let ProtocolEventDate = DateToStartBreeding;
+      ProtocolEventDate = ProtocolEventDate.startOf("day").add(parseInt(instruction.OnDay), "day").startOf("day");
 
       //ics.createEvents api arguements found https://www.npmjs.com/package/ics
       eventDictionary["title"] = instruction.step1;
       eventDictionary["description"] = description;
       eventDictionary["start"] = [
-        ProtocolEventDate.getFullYear(),
-        ProtocolEventDate.getMonth() + 1,
-        ProtocolEventDate.getDate(),
-        ProtocolEventDate.getHours(),
-        ProtocolEventDate.getMinutes(),
+        ProtocolEventDate.year(),
+        ProtocolEventDate.month() + 1,
+        ProtocolEventDate.date(),
+        ProtocolEventDate.hour(),
+        ProtocolEventDate.minute(),
       ];
       eventDictionary["duration"] = { hours: 1 };
       listOfEvents.push(eventDictionary);

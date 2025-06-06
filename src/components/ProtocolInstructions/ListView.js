@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container } from "@mui/material";
 import "../../style/listView.css";
+import dayjs from "dayjs";
 
 const ListView = (props) => {
   const {
@@ -14,9 +15,10 @@ const ListView = (props) => {
     SemenType,
   } = props;
 
-  var selectedGNRH;
-  var selectedPG;
   // text changes
+  let selectedGNRH;
+  let selectedPG;
+  let listOfInstrucitons = JSON.parse(JSON.stringify(ListOfInstrucitons));
   let ai_standing_heat_txt = "";
   let ai_with_sexed_semen = "";
   let ai_with_sexed_semen_showing = "";
@@ -26,13 +28,14 @@ const ListView = (props) => {
   let estrus_detection_aid = "";
   let ai_females_showing_estrus = "";
 
-  let mga_time_change = new Date();
-  let mga_time_change_2 = new Date();
-  let mga_time_change_3 = new Date();
+  let mga_time_change = dayjs().startOf("day");
+  let mga_time_change_2 = dayjs().startOf("day");
+  let mga_time_change_3 = dayjs().startOf("day");
+  let dateToStartBreeding = DateToStartBreeding.clone();
 
-  mga_time_change.setDate(DateToStartBreeding.getDate() - 19);
-  mga_time_change_2.setDate(DateToStartBreeding.getDate() - 11);
-  mga_time_change_3.setDate(DateToStartBreeding.getDate() - 22);
+  mga_time_change = mga_time_change.subtract(19, "day").startOf("day");
+  mga_time_change_2 = mga_time_change_2.subtract(11, "day").startOf("day");
+  mga_time_change_3 = mga_time_change_3.subtract(22, "day").startOf("day");
 
   //store if breed females AI 16-22....
   // G14 -> Semen Type
@@ -59,7 +62,7 @@ const ListView = (props) => {
   }
 
   //search instruction for <<ai_after_standing_heat>>
-  ListOfInstrucitons.forEach((item) => {
+  listOfInstrucitons.forEach((item) => {
     for (let param in item) {
       if (item[param] === "<<ai_after_standing_heat>>")
         item[param] = ai_standing_heat_txt;
@@ -76,7 +79,7 @@ const ListView = (props) => {
       if (item[param] === "<<ai_females_showing_estrus>>")
         item[param] = ai_females_showing_estrus;
       if (item[param] === "<<current_time>>")
-        item[param] = DateToStartBreeding.toLocaleString("en-US", {
+        item[param] = dateToStartBreeding.toLocaleString("en-US", {
           hour: "numeric",
           minute: "numeric",
           hour12: true,
@@ -85,34 +88,18 @@ const ListView = (props) => {
       if (item[param] === "<<mga_time_change_3>>")
         item[param] =
           "Continue feeding until " +
-          (mga_time_change_3.getMonth() + 1) +
-          "/" +
-          mga_time_change_3.getDate() +
-          "/" +
-          mga_time_change_3.getFullYear() +
+          mga_time_change_3.format('MM/DD/YYYY') +
           ".";
       if (item[param] === "<<mga_time_change_2>>")
         item[param] =
           "Continue feeding until " +
-          (mga_time_change_2.getMonth() + 1) +
-          "/" +
-          mga_time_change_2.getDate() +
-          "/" +
-          mga_time_change_2.getFullYear() +
+          mga_time_change_2.format('MM/DD/YYYY') +
           ".";
       if (item[param] === "<<mga_time_change>>")
         item[param] =
           "Continue feeding until " +
-          (mga_time_change.getMonth() + 1) +
-          "/" +
-          mga_time_change.getDate() +
-          "/" +
-          mga_time_change.getFullYear() +
+          mga_time_change.format('MM/DD/YYYY') +
           ".";
-
-      /*if(SynchronizationProtocol === "8"){
-                if(item[param] === "<<protocol_8_time_change>>") item[param] = "Continue feeding until " + (changingTime.getMonth() + 1) + "/" + changingTime.getDay() + "/" + changingTime.getFullYear() + ".";
-            }*/
     }
   });
 
@@ -138,8 +125,6 @@ const ListView = (props) => {
     default:
       break;
   }
-
-  //console.log("the selected GNRH: " + selectedGNRH);
 
   switch (true) {
     case PG === "Estrumate":
@@ -171,7 +156,7 @@ const ListView = (props) => {
   }
 
   // fixing some timing issues
-  const length = Object.keys(ListOfInstrucitons).length;
+  const length = Object.keys(listOfInstrucitons).length;
 
   for (var i = 0; i < length; i++) {
     var marginOfErr = -1;
@@ -181,106 +166,108 @@ const ListView = (props) => {
     for (var j = 1; j < 6; j++) {
       stepX = "step" + j;
       // subtract time
-      if (JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined) {
+      if (JSON.stringify(listOfInstrucitons[i][stepX]) !== undefined) {
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.416666667")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.416666667")
         ) {
           marginOfErr = 0;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.333333333")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.333333333")
         ) {
           marginOfErr = 2;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.291666667")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.291666667")
         ) {
           marginOfErr = 3;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.25")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.25")) {
           marginOfErr = 4;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.166666667")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.166666667")
         ) {
           marginOfErr = 6;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-12hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("-12hrs")) {
           marginOfErr = 12;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-15hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("-15hrs")) {
           marginOfErr = 15;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("-18hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("-18hrs")) {
           marginOfErr = 18;
         }
         if (marginOfErr >= 0) {
-          DateToStartBreeding.setHours(
-            DateToStartBreeding.getHours() - marginOfErr
+          let tempDateToStartBreeding = dateToStartBreeding.clone();
+          tempDateToStartBreeding = tempDateToStartBreeding.subtract(
+            marginOfErr,
+            "hour"
           );
-          ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString(
-            "en-US",
-            { hour: "numeric", minute: "numeric", hour12: true }
-          );
+          listOfInstrucitons[i][stepX] =
+            tempDateToStartBreeding.format("h:mm A");
 
-          DateToStartBreeding.setHours(
-            DateToStartBreeding.getHours() + marginOfErr
+          tempDateToStartBreeding = tempDateToStartBreeding.add(
+            marginOfErr,
+            "hour"
           );
           marginOfErr = -1;
         }
       }
 
       // add time
-      if (JSON.stringify(ListOfInstrucitons[i][stepX]) !== undefined) {
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.5")) {
+      if (JSON.stringify(listOfInstrucitons[i][stepX]) !== undefined) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.5")) {
           marginOfErr = 2;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.541666667")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.541666667")
         ) {
           marginOfErr = 3;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.583333333")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.583333333")
         ) {
           marginOfErr = 4;
         }
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("0.666666667")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("0.666666667")
         ) {
           marginOfErr = 6;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+9hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("+9hrs")) {
           marginOfErr = 9;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+12hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("+12hrs")) {
           marginOfErr = 12;
         }
-        if (JSON.stringify(ListOfInstrucitons[i][stepX]).includes("+18hrs")) {
+        if (JSON.stringify(listOfInstrucitons[i][stepX]).includes("+18hrs")) {
           marginOfErr = 18;
         }
         if (marginOfErr >= 0) {
-          DateToStartBreeding.setHours(
-            DateToStartBreeding.getHours() + marginOfErr
+          let tempDateToStartBreeding = dateToStartBreeding.clone();
+          tempDateToStartBreeding = tempDateToStartBreeding.add(
+            marginOfErr,
+            "hour"
           );
-          ListOfInstrucitons[i][stepX] = DateToStartBreeding.toLocaleString(
-            "en-US",
-            { hour: "numeric", minute: "numeric", hour12: true }
-          );
+          listOfInstrucitons[i][stepX] =
+            tempDateToStartBreeding.format("h:mm A");
 
-          DateToStartBreeding.setHours(
-            DateToStartBreeding.getHours() - marginOfErr
+          tempDateToStartBreeding = tempDateToStartBreeding.subtract(
+            marginOfErr,
+            "hour"
           );
           marginOfErr = -1;
         }
 
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes(
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes(
             "2cc Cystorelin"
           )
         ) {
-          ListOfInstrucitons[i][stepX] = JSON.parse(
-            JSON.stringify(ListOfInstrucitons[i][stepX]).replace(
+          listOfInstrucitons[i][stepX] = JSON.parse(
+            JSON.stringify(listOfInstrucitons[i][stepX]).replace(
               "2cc Cystorelin (GnRH)",
               selectedGNRH
             )
@@ -288,10 +275,10 @@ const ListView = (props) => {
         }
 
         if (
-          JSON.stringify(ListOfInstrucitons[i][stepX]).includes("5cc Lutalyse")
+          JSON.stringify(listOfInstrucitons[i][stepX]).includes("5cc Lutalyse")
         ) {
-          ListOfInstrucitons[i][stepX] = JSON.parse(
-            JSON.stringify(ListOfInstrucitons[i][stepX]).replace(
+          listOfInstrucitons[i][stepX] = JSON.parse(
+            JSON.stringify(listOfInstrucitons[i][stepX]).replace(
               "5cc Lutalyse (PG)",
               selectedPG
             )
@@ -300,6 +287,7 @@ const ListView = (props) => {
       }
     }
   }
+
 
   return (
     <>
@@ -316,20 +304,28 @@ const ListView = (props) => {
             </tr>
           </thead>
           <tbody>
-            {ListOfInstrucitons.map((instruction, key) => {
-              let tempDate = new Date(DateToStartBreeding);
-              tempDate.setDate(
-                DateToStartBreeding.getDate() + parseInt(instruction.OnDay)
-              );
+            {listOfInstrucitons.map((instruction, key) => {
+              let tempDate = dateToStartBreeding.clone();
 
+              if (parseInt(instruction.OnDay) < 0) {
+                tempDate = tempDate.add(parseInt(instruction.OnDay) + 1, "day");
+              } else {
+                tempDate = tempDate.add(parseInt(instruction.OnDay), "day");
+              }
+
+              console.log(
+                "tempDate",
+                dateToStartBreeding.format("YYYY-MM-DD:HH:mm:ss"),
+                instruction.OnDay,
+                tempDate.format("YYYY-MM-DD:HH:mm:ss")
+              );
               return (
                 <tr key={key}>
                   <td>
-                    {tempDate.getMonth() + 1} / {tempDate.getDate()} /{" "}
-                    {tempDate.getFullYear()}
+                    {tempDate.format("MM/DD/YYYY")}
                     <br />
                     <br />
-                    {tempDate.toLocaleString("default", { weekday: "long" })}
+                    {tempDate.format("dddd")}
                   </td>
                   <td className="instruction-section">
                     <br />
