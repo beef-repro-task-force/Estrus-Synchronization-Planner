@@ -313,12 +313,6 @@ const ListView = (props) => {
                 tempDate = tempDate.add(parseInt(instruction.OnDay), "day");
               }
 
-              console.log(
-                "tempDate",
-                dateToStartBreeding.format("YYYY-MM-DD:HH:mm:ss"),
-                instruction.OnDay,
-                tempDate.format("YYYY-MM-DD:HH:mm:ss")
-              );
               return (
                 <tr key={key}>
                   <td>

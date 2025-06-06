@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import UserInput from "../components/userInput";
 import ValidProtocols from "../components/validProtocols";
 import ProtocolInstructions from "../components/ProtocolInstructions/ProtocolInstructions";
-
+import dayjs from "dayjs";
 import { CircularProgress } from "@mui/material";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
   const [CowOrHeifer, setCowOrHeifer] = useState("Cow");
   const [SemenType, setSemenType] = useState("Conventional");
   const [SystemType, setSystemType] = useState("Estrus AI");
-  const [DateToStartBreeding, setDateToStartBreeding] = useState(new Date());
+  const [DateToStartBreeding, setDateToStartBreeding] = useState(dayjs());
   const [GNRH, setGNRH] = useState("GnRH");
   const [PG, setPG] = useState("PG");
   const [BullTurnIn, setBullTurnIn] = useState(14);
