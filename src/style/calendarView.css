@@ -1,16 +1,39 @@
 
 .calendar-container{
-    padding: 20px;
+  padding: 20px;
+}
+
+.fc-event-title {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.fc-h-event {
+  overflow: visible;
+  position: relative;
+}
+
+.fc-h-event:hover .fc-event-title {
+  white-space: normal;
+  overflow: visible;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 @media print {
-    
-    body, html, #wrapper {  
-        width: 100%;  
-       }  
-        
-      div {  
-       overflow: visible !important;     
-      }
-      
+
+  body, html, #wrapper {
+      width: 100%;
+     }
+
+    div {
+     overflow: visible !important;
+    }
+
 }
